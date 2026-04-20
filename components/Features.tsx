@@ -20,8 +20,8 @@ const features = [
     icon: <><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z" /><path d="M8 14c.5 1.5 2 2.5 4 2.5s3.5-1 4-2.5" /></>,
   },
   {
-    title: 'Rezistență la foc (Euroclass E)',
-    desc: 'Tratat cu săruri de bor ignifuge. Nu propagă flacăra, nu eliberează gaze toxice.',
+    title: 'Rezistență la foc — Clasa B s1 d0',
+    desc: 'Tratat cu săruri de bor ignifuge. Clasificare europeană B s1 d0 — nu propagă flacăra, fum minim, fără picături aprinse.',
     icon: <><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" /><path d="M12 8c0 2.5-2 3-2 5s2 3 2 3 2-1 2-3-2-2.5-2-5z" /></>,
   },
   {

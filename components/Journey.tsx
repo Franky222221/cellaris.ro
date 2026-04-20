@@ -133,7 +133,7 @@ const steps = [
   {
     num: '05',
     title: 'Casă eficientă A+',
-    sub: '−65% energie · 25 ani garanție · zero CO₂',
+    sub: '−65% energie · 30 ani garanție · zero CO₂',
     icon: (
       <svg width="30" height="30" viewBox="0 0 32 32" fill="none" stroke="currentColor" strokeWidth={1.6} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
         <path d="M4 14 L16 4 L28 14 L28 28 L4 28 Z" />
@@ -156,7 +156,7 @@ const steps = [
     ),
     badge: '05 — Rezultat',
     detailTitle: 'Casă eficientă clasa A+ — economii garantate',
-    body: 'Reducere consum energetic cu 40–65%. Casă mai caldă iarna, mai rece vara. Zgomot stradal redus cu 50+ dB. Certificat energetic EPC A sau A+, eligibil pentru finanțare Casa Verde Plus și PNRR. Garanție 25 ani.',
+    body: 'Reducere consum energetic cu 40–65%. Casă mai caldă iarna, mai rece vara. Zgomot stradal redus cu 50+ dB. Certificat energetic EPC A sau A+, eligibil pentru finanțare Casa Verde Plus și PNRR. Garanție 30 ani.',
   },
 ];
 

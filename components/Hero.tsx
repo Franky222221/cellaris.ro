@@ -5,7 +5,7 @@ import Link from 'next/link';
 
 export default function Hero() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
-  const [kwh, setKwh] = useState(0);
+  const [kg, setKg] = useState(700000);
   const productRef = useRef<HTMLDivElement>(null);
 
   /* ── Canvas fiber animation ─────────────────────────── */
@@ -94,14 +94,32 @@ export default function Hero() {
     };
   }, []);
 
-  /* ── Energy ticker ──────────────────────────────────── */
+  /* ── Hârtie reciclată ticker (700.000 kg bază, +4.000–12.000 kg/zi) ── */
   useEffect(() => {
-    const KWH_PER_DAY = (850 * 150 * 40) / 365;
-    const dayMs = 86_400_000;
-    const startTime = Date.now() - (new Date().getHours() / 24) * dayMs;
-    const id = setInterval(() => {
-      setKwh(Math.floor(((Date.now() - startTime) / dayMs) * KWH_PER_DAY));
-    }, 1000);
+    const BASE_KG = 700_000;
+    const REF_DATE = new Date('2025-01-01').getTime();
+    const DAY_MS = 86_400_000;
+
+    /* Pseudo-random dar determinist pe zi — seed = numărul zilei */
+    function dailyIncrement(dayNum: number) {
+      const x = Math.sin(dayNum * 9301 + 49297) * 233280;
+      const r = x - Math.floor(x); // 0–1
+      return Math.floor(r * 8_000 + 4_000); // 4.000–12.000 kg
+    }
+
+    function computeKg() {
+      const now = Date.now();
+      const dayNum = Math.floor((now - REF_DATE) / DAY_MS);
+      let total = BASE_KG;
+      for (let i = 0; i < dayNum; i++) total += dailyIncrement(i);
+      /* progres în ziua curentă */
+      const dayProgress = ((now - REF_DATE) % DAY_MS) / DAY_MS;
+      total += Math.floor(dailyIncrement(dayNum) * dayProgress);
+      return total;
+    }
+
+    setKg(computeKg());
+    const id = setInterval(() => setKg(computeKg()), 60_000); // refresh la fiecare minut
     return () => clearInterval(id);
   }, []);
 
@@ -168,8 +186,8 @@ export default function Hero() {
               <p className="hero__card-label">Performanță certificată</p>
               <div className="hero__stats">
                 {[
-                  { num: '850+', label: 'proiecte finalizate' },
-                  { num: '25 ani', label: 'garanție material' },
+                  { num: '3000+', label: 'proiecte finalizate' },
+                  { num: '30 ani', label: 'garanție material' },
                   { num: '48h', label: 'de la ofertă la montaj' },
                   { num: '6×', label: 'mai puțin CO₂ față de vată' },
                 ].map(s => (
@@ -182,8 +200,8 @@ export default function Hero() {
               <div className="hero__card-divider" />
               <div className="hero__ticker">
                 <div className="hero__ticker-dot" aria-hidden="true" />
-                <span className="hero__ticker-label">Energie economisită azi</span>
-                <span className="hero__ticker-value">{kwh.toLocaleString('ro-RO')} kWh</span>
+                <span className="hero__ticker-label">Hârtie reciclată procesată</span>
+                <span className="hero__ticker-value">{kg.toLocaleString('ro-RO')} kg</span>
               </div>
             </div>
           </div>

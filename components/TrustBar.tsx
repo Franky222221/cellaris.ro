@@ -1,7 +1,11 @@
 export default function TrustBar() {
   const items = [
     {
-      label: 'Certificat ETA European',
+      label: 'Clasa foc B s1 d0',
+      icon: <><path d="M12 2c0 4-4 6-4 10a4 4 0 0 0 8 0c0-4-4-6-4-10z"/><path d="M12 12c0 2-2 3-2 5a2 2 0 0 0 4 0c0-2-2-3-2-5z"/></>,
+    },
+    {
+      label: 'Agrement tehnic',
       icon: <><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" /><path d="m9 12 2 2 4-4" /></>,
     },
     {
@@ -17,7 +21,7 @@ export default function TrustBar() {
       icon: <><rect x="3" y="11" width="18" height="11" rx="2" ry="2" /><path d="M7 11V7a5 5 0 0 1 10 0v4" /></>,
     },
     {
-      label: 'Garanție 25 ani',
+      label: 'Garanție 30 ani',
       icon: <><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" /><polyline points="22 4 12 14.01 9 11.01" /></>,
     },
   ];

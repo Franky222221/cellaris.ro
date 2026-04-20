@@ -3,9 +3,9 @@
 import { useEffect, useRef } from 'react';
 
 const items = [
-  { counter: 850, suffix: '+', label: 'Proiecte finalizate', delay: 0 },
+  { counter: 3000, suffix: '+', label: 'Proiecte finalizate', delay: 0 },
   { counter: 65, suffix: '%', label: 'Reducere consum energetic', delay: 100 },
-  { counter: 25, suffix: ' ani', label: 'Garanție material', delay: 200 },
+  { counter: 30, suffix: ' ani', label: 'Garanție material', delay: 200 },
   { counter: 100, suffix: '%', label: 'Material reciclat', delay: 300 },
 ];
 

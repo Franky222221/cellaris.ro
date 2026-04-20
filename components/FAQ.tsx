@@ -7,7 +7,7 @@ const items = [
   { q: 'Ce este izolația din fibre de celuloză și cum diferă de vata minerală?', a: 'Produsă din hârtie reciclată tratată cu săruri de bor. Față de vata minerală: acoperire omogenă fără punți termice, reglare naturală umiditate și amprenta CO₂ de 6× mai mică.' },
   { q: 'Cât durează montajul și este deranjant pentru familie?', a: '150–200 mp în 1–2 zile. Praf minim (furtunuri sigilate). Familia poate rămâne în casă. Curățăm complet înainte de plecare.' },
   { q: 'Pot accesa finanțare pentru izolarea casei?', a: 'Da. Eligibil Casa Verde Plus, PNRR Renovare Energetică. Furnizăm toată documentația tehnică necesară dosarului de finanțare.' },
-  { q: 'Care este garanția și ce include?', a: '25 ani garanție material, 5 ani manoperă. Include inspecție anuală gratuită și remediere fără costuri a oricărui defect de montaj.' },
+  { q: 'Care este garanția și ce include?', a: '30 ani garanție material, 5 ani manoperă. Include inspecție anuală gratuită și remediere fără costuri a oricărui defect de montaj.' },
   { q: 'În ce județe activați?', a: 'București (toate sectoarele), Ilfov, Prahova, Dâmbovița, Giurgiu, Călărași. Proiecte mari (500+ mp) — oriunde în țară.' },
 ];
 

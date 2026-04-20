@@ -508,25 +508,29 @@ const BREAKPOINTS = { sm: 576, md: 768, lg: 992, xl: 1200 };
   const el = document.getElementById('energyTicker');
   if (!el) return;
 
-  /* Approximate: 850 projects × avg 150m² × 40kWh/m²/yr saved ÷ 365 days */
-  const kwhPerDay = Math.round((850 * 150 * 40) / 365);
-  const kwhPerMs = kwhPerDay / 86400000;
+  /* Hârtie reciclată procesată — 700.000 kg bază, +4.000–12.000 kg/zi */
+  const BASE_KG = 700_000;
+  const REF = new Date('2025-01-01').getTime();
+  const DAY_MS = 86_400_000;
 
-  const dayStart = new Date();
-  dayStart.setHours(0, 0, 0, 0);
-  const elapsed = Date.now() - dayStart.getTime();
-  let current = Math.round(elapsed * kwhPerMs);
-
-  function format(n) {
-    return n.toLocaleString('ro-RO') + ' kWh';
+  function dailyInc(d) {
+    const x = Math.sin(d * 9301 + 49297) * 233280;
+    return Math.floor((x - Math.floor(x)) * 8000 + 4000);
   }
 
-  el.textContent = format(current);
+  function computeKg() {
+    const now = Date.now();
+    const dayNum = Math.floor((now - REF) / DAY_MS);
+    let total = BASE_KG;
+    for (let i = 0; i < dayNum; i++) total += dailyInc(i);
+    total += Math.floor(dailyInc(dayNum) * (((now - REF) % DAY_MS) / DAY_MS));
+    return total;
+  }
+  el.textContent = computeKg().toLocaleString('ro-RO') + ' kg';
 
   setInterval(() => {
-    current += Math.round(kwhPerMs * 1000 * 3);
-    el.textContent = format(current);
-  }, 3000);
+    el.textContent = computeKg().toLocaleString('ro-RO') + ' kg';
+  }, 60000);
 })();
 
 /* ── CARBON METER ANIMATION ────────────────────────────── */

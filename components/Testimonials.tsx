@@ -10,7 +10,7 @@ export default function Testimonials() {
       <div className="container">
         <div className="section__header section__header--center" data-reveal>
           <p className="section__overline">Ce spun clienții</p>
-          <h2 className="section__title">850+ familii mulțumite</h2>
+          <h2 className="section__title">3000+ familii mulțumite</h2>
           <p className="section__sub">Recenzii reale, verificate. Nu selectăm doar pe cele pozitive.</p>
         </div>
         <div className="testimonials__grid">
