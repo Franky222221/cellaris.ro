@@ -1,7 +1,6 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import Image from 'next/image';
 import Link from 'next/link';
 
 const links = [
@@ -33,7 +32,8 @@ export default function Nav() {
 
   const Logo = () => (
     <Link href="/" className="nav__logo" aria-label="CELLARIS Acasă">
-      <Image src="/images/logo.png" alt="CELLARIS — Izolații Celuloză" width={120} height={72} priority />
+      {/* eslint-disable-next-line @next/next/no-img-element */}
+      <img src="/images/logo.png" alt="CELLARIS — Izolații Celuloză" style={{ height: 40, width: 'auto' }} />
     </Link>
   );
 

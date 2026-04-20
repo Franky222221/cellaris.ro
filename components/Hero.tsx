@@ -149,14 +149,12 @@ export default function Hero() {
           {/* Right: product portrait + stats */}
           <div className="hero__right">
             <div className="hero__product" id="heroProduct" ref={productRef}>
-              <Image
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
                 className="hero__product-img"
                 src="/images/sac-celuloza.png"
                 alt="Sac termoizolație fibre de celuloză CELLARIS 15 kg"
-                fill
-                sizes="(max-width:992px) 90vw, 40vw"
-                priority
-                style={{ objectFit: 'contain', objectPosition: 'center bottom' }}
+                loading="eager"
               />
               <div className="hero__product-badge" aria-hidden="true">
                 <span className="hero__product-badge-dot" />

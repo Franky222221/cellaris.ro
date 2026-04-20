@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import Link from 'next/link';
 
 export default function Footer() {
@@ -8,7 +7,8 @@ export default function Footer() {
         <div className="footer__top">
           <div className="footer__brand-col">
             <div className="footer__logo">
-              <Image src="/images/logo.png" alt="CELLARIS" width={100} height={60} />
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src="/images/logo.png" alt="CELLARIS" style={{ height: 48, width: 'auto' }} />
             </div>
             <p className="footer__tagline">
               Producător și montator de izolații premium din fibre de celuloză reciclată.
