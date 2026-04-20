@@ -55,7 +55,7 @@ interface BlogPost {
 export default function EditBlogPostPage() {
   const router = useRouter();
   const params = useParams();
-  const id = params.id as string;
+  const id = (params?.id ?? '') as string;
 
   const [loaded, setLoaded] = useState(false);
   const [notFound, setNotFound] = useState(false);
