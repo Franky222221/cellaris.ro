@@ -49,7 +49,7 @@ export default function BlogPage() {
           {posts.length === 0 ? (
             <p style={{ color: '#6b7280', textAlign: 'center', padding: '4rem 0' }}>Nu există articole publicate încă.</p>
           ) : (
-            <style>{`.blog-card{transition:box-shadow .2s,transform .2s}.blog-card:hover{box-shadow:0 8px 32px rgba(0,0,0,.1);transform:translateY(-2px)}`}</style>
+            <><style>{`.blog-card{transition:box-shadow .2s,transform .2s}.blog-card:hover{box-shadow:0 8px 32px rgba(0,0,0,.1);transform:translateY(-2px)}`}</style>
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(320px, 1fr))', gap: '1.75rem' }}>
               {posts.map(post => (
                 <article key={post.id} className="blog-card" style={{ background: '#fff', borderRadius: '12px', border: '1px solid #e5e7eb', overflow: 'hidden' }}
@@ -75,7 +75,7 @@ export default function BlogPage() {
                   </div>
                 </article>
               ))}
-            </div>
+            </div></>
           )}
         </div>
       </section>
