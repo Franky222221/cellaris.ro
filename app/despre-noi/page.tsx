@@ -56,7 +56,7 @@ const timeline = [
   { an: '2018', eveniment: 'Fondarea CELLARIS', desc: 'Andrei Ionescu fondează CELLARIS cu o echipă de 4 persoane și primul utilaj de insuflare din producție proprie.' },
   { an: '2019', eveniment: 'Primele 100 de proiecte', desc: 'Expansiune rapidă în zona București-Ilfov. Achiziționarea primului parc de utilaje profesionale pentru montaj.' },
   { an: '2020', eveniment: '500 proiecte finalizate', desc: 'CELLARIS depășește 500 de proiecte și se extinde în județele Prahova, Dâmbovița și Giurgiu.' },
-  { an: '2021', eveniment: 'Parteneriat ISOCELL', desc: 'Parteneriat strategic cu producătorul austriac ISOCELL pentru calificarea ca distribuitor oficial în România.' },
+  { an: '2021', eveniment: 'Extindere națională', desc: 'CELLARIS se extinde în 15 județe noi și achiziționează 3 utilaje suplimentare pentru a face față cererii în creștere.' },
   { an: '2022', eveniment: 'Certificare nZEB', desc: 'CELLARIS obține certificarea oficială pentru sisteme de construcții cu consum de energie aproape zero (nZEB), prima din sectorul izolațiilor din celuloză din România.' },
   { an: '2023', eveniment: '1500+ proiecte', desc: 'Echipa ajunge la 35 de angajați și operaționalizează un al doilea depozit regional în Ploiești.' },
   { an: '2025', eveniment: '3000+ proiecte', desc: 'CELLARIS devine liderul pieței de izolații din celuloză din România, cu o rată de recomandare de 94% din clienții existenți.' },
