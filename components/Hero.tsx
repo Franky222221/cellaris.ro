@@ -148,16 +148,16 @@ export default function Hero() {
 
           {/* Right: product portrait + stats */}
           <div className="hero__right">
-            <div className="hero__product" id="heroProduct" ref={productRef} data-scroll-video>
-              <div className="hero__product-placeholder">
-                <div className="hero__product-ph-ring" aria-hidden="true">
-                  <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.25} strokeLinecap="round" strokeLinejoin="round">
-                    <path d="M12 5v14M5 12h14" />
-                  </svg>
-                </div>
-                <p className="hero__product-ph-label">Adaugă fotografia sacului</p>
-                <p className="hero__product-ph-hint">1200 × 1600 px recomandat</p>
-              </div>
+            <div className="hero__product" id="heroProduct" ref={productRef}>
+              <Image
+                className="hero__product-img"
+                src="/images/sac-celuloza.png"
+                alt="Sac termoizolație fibre de celuloză CELLARIS 15 kg"
+                fill
+                sizes="(max-width:992px) 90vw, 40vw"
+                priority
+                style={{ objectFit: 'contain', objectPosition: 'center bottom' }}
+              />
               <div className="hero__product-badge" aria-hidden="true">
                 <span className="hero__product-badge-dot" />
                 <span className="hero__product-badge-text">100% Celuloză Reciclată</span>

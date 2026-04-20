@@ -419,13 +419,15 @@ button, input, select, textarea { font: inherit; }
   font-family: var(--mono);
 }
 
-/* Actual image (shown when src is set) */
+/* Actual image / video */
 .hero__product-img,
 .hero__product-video {
   position: absolute; inset: 0;
   width: 100%; height: 100%;
-  object-fit: cover;
+  object-fit: contain;
+  object-position: center bottom;
   border-radius: inherit;
+  padding: 1rem 1.5rem 0;
 }
 
 /* Bottom badge overlay */
