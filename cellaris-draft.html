@@ -1,0 +1,3389 @@
+<!DOCTYPE html>
+<html lang="ro" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CELLARIS — Izolații Premium din Fibre de Celuloză | Producător România</title>
+  <meta name="description" content="CELLARIS este primul brand românesc care produce și montează izolații din fibre de celuloză reciclată. Soluții premium pentru case nZEB și Case Pasive. Producție proprie, montaj profesional.">
+  <link rel="canonical" href="https://cellaris.ro/">
+  <meta property="og:title" content="CELLARIS — Izolații Premium din Fibre de Celuloză">
+  <meta property="og:description" content="De la hârtie reciclată la izolație premium. CELLARIS produce și montează fibre de celuloză pentru case nZEB și Case Pasive în toată România.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://cellaris.ro/">
+  <meta name="theme-color" content="#050A06">
+  
+  
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,400;1,500;1,600;1,700&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+/* ============================================================
+   CELLARIS — PREMIUM REDESIGN v2.0
+   Ultra-modern · Editorial · Cinematic · Impact
+   ============================================================ */
+
+/* ── GOOGLE FONTS ───────────────────────────────────────── */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+/* ── CUSTOM PROPERTIES ──────────────────────────────────── */
+:root {
+  /* Core dark palette */
+  --void:        #050A06;
+  --abyss:       #080F09;
+  --dark-1:      #0C160D;
+  --dark-2:      #111D12;
+  --dark-3:      #182419;
+
+  /* Brand greens */
+  --green-deep:  #1A3D28;
+  --green-forest:#23542F;
+  --green-mid:   #2D6A4F;
+  --green-sage:  #52826A;
+  --green-light: #7FB99A;
+  --green-pale:  #B5D4C3;
+  --green-glow:  #3DFF8A;
+  --green-neon:  rgba(61,255,138,0.12);
+
+  /* Light palette */
+  --cream:       #F4EFE5;
+  --cream-warm:  #EDE7D8;
+  --cream-dark:  #E0D9CC;
+  --stone:       #9B9B8E;
+  --stone-dark:  #6B6B60;
+  --anthracite:  #1A1A16;
+
+  /* Typography */
+  --font-display: 'Cormorant Garamond', Georgia, serif;
+  --font-sans:    'Inter', -apple-system, sans-serif;
+
+  /* Spacing */
+  --sp-1:  .25rem;  --sp-2:  .5rem;   --sp-3:  .75rem;
+  --sp-4:  1rem;    --sp-5:  1.25rem; --sp-6:  1.5rem;
+  --sp-8:  2rem;    --sp-10: 2.5rem;  --sp-12: 3rem;
+  --sp-16: 4rem;    --sp-20: 5rem;    --sp-24: 6rem;
+  --sp-32: 8rem;    --sp-40: 10rem;
+
+  /* Radius */
+  --r-sm: 4px; --r-md: 10px; --r-lg: 20px;
+  --r-xl: 32px; --r-2xl: 48px; --r-full: 9999px;
+
+  /* Transitions */
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out:   cubic-bezier(0.4, 0, 0.2, 1);
+  --t-fast:  200ms var(--ease-in-out);
+  --t-mid:   400ms var(--ease-out-expo);
+  --t-slow:  700ms var(--ease-out-expo);
+
+  /* Z-index */
+  --z-nav:    200;
+  --z-modal:  400;
+  --z-toast:  500;
+}
+
+/* ── RESET ──────────────────────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  font-family: var(--font-sans);
+  background: var(--void);
+  color: var(--cream);
+  overflow-x: hidden;
+  line-height: 1.6;
+  cursor: none;
+}
+
+img, video, canvas, svg { display: block; max-width: 100%; }
+a { color: inherit; text-decoration: none; }
+ul, ol { list-style: none; }
+input, button, textarea, select { font: inherit; }
+
+/* ── CUSTOM CURSOR ──────────────────────────────────────── */
+.cursor {
+  position: fixed;
+  width: 10px; height: 10px;
+  background: var(--green-glow);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9999;
+  transform: translate(-50%,-50%);
+  transition: width var(--t-fast), height var(--t-fast), opacity var(--t-fast);
+  mix-blend-mode: exclusion;
+}
+
+.cursor-ring {
+  position: fixed;
+  width: 40px; height: 40px;
+  border: 1.5px solid rgba(61,255,138,0.4);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9998;
+  transform: translate(-50%,-50%);
+  transition: width 0.3s var(--ease-out-expo),
+              height 0.3s var(--ease-out-expo),
+              border-color 0.3s ease;
+}
+
+body:has(a:hover) .cursor-ring,
+body:has(button:hover) .cursor-ring {
+  width: 64px; height: 64px;
+  border-color: rgba(61,255,138,0.6);
+}
+
+@media (pointer: coarse) { .cursor, .cursor-ring { display: none; } body { cursor: auto; } }
+
+/* ── GRAIN OVERLAY ──────────────────────────────────────── */
+body::before {
+  content: '';
+  position: fixed;
+  inset: -50%;
+  width: 200%; height: 200%;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='1'/%3E%3C/svg%3E");
+  opacity: 0.025;
+  pointer-events: none;
+  z-index: 9997;
+  animation: grain 0.5s steps(2) infinite;
+}
+
+@keyframes grain {
+  0%, 100% { transform: translate(0,0); }
+  25%       { transform: translate(-2%,-2%); }
+  50%       { transform: translate(2%, 1%); }
+  75%       { transform: translate(-1%, 2%); }
+}
+
+/* ── SCROLLBAR ──────────────────────────────────────────── */
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: var(--void); }
+::-webkit-scrollbar-thumb { background: var(--green-mid); border-radius: 4px; }
+
+/* ── LAYOUT ─────────────────────────────────────────────── */
+.container {
+  width: 100%;
+  max-width: 1320px;
+  margin-inline: auto;
+  padding-inline: var(--sp-8);
+}
+.container--sm { max-width: 860px; }
+.container--wide { max-width: 1600px; }
+
+/* ── TYPOGRAPHY ─────────────────────────────────────────── */
+.display {
+  font-family: var(--font-display);
+  font-size: clamp(4rem, 9vw, 9.5rem);
+  font-weight: 600;
+  line-height: 0.95;
+  letter-spacing: -0.02em;
+  font-style: italic;
+}
+
+.headline {
+  font-family: var(--font-display);
+  font-size: clamp(2.8rem, 5vw, 6rem);
+  font-weight: 600;
+  line-height: 1.0;
+  letter-spacing: -0.02em;
+}
+
+.headline--sans {
+  font-family: var(--font-sans);
+  font-size: clamp(2rem, 3.5vw, 3.5rem);
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -0.035em;
+}
+
+.title {
+  font-family: var(--font-sans);
+  font-size: clamp(1.25rem, 2vw, 1.75rem);
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.025em;
+}
+
+.label {
+  font-size: 0.6875rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+/* ── PROGRESS BAR ───────────────────────────────────────── */
+.reading-progress {
+  position: fixed; top: 0; left: 0;
+  height: 2px;
+  background: linear-gradient(90deg, var(--green-mid), var(--green-glow));
+  z-index: calc(var(--z-nav) + 1);
+  transition: width 0.1s linear;
+}
+
+/* ══════════════════════════════════════════════════════════
+   NAVIGATION
+══════════════════════════════════════════════════════════ */
+.nav {
+  position: fixed; top: 0; left: 0; right: 0;
+  z-index: var(--z-nav);
+  padding-block: var(--sp-5);
+  transition: padding var(--t-mid), background var(--t-mid);
+}
+
+.nav::before {
+  content: '';
+  position: absolute; inset: 0;
+  background: linear-gradient(to bottom, rgba(5,10,6,0.95), transparent);
+  opacity: 0;
+  transition: opacity var(--t-mid);
+  pointer-events: none;
+}
+
+.nav.is-scrolled { padding-block: var(--sp-4); }
+.nav.is-scrolled::before { opacity: 1; }
+
+.nav.is-scrolled .nav__inner {
+  background: rgba(8,15,9,0.85);
+  backdrop-filter: blur(24px) saturate(180%);
+  -webkit-backdrop-filter: blur(24px) saturate(180%);
+  border: 1px solid rgba(255,255,255,0.05);
+  border-radius: var(--r-2xl);
+  padding-inline: var(--sp-6);
+}
+
+.nav__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--sp-8);
+  padding: var(--sp-3) var(--sp-4);
+  transition: background var(--t-mid), border var(--t-mid), border-radius var(--t-mid), padding var(--t-mid);
+}
+
+/* Logo */
+.nav__logo {
+  display: flex; align-items: center; gap: var(--sp-3);
+  flex-shrink: 0;
+}
+
+.nav__logo-mark {
+  width: 34px; height: 34px;
+  border-radius: var(--r-md);
+  background: linear-gradient(135deg, var(--green-mid), var(--green-sage));
+  display: flex; align-items: center; justify-content: center;
+  font-family: var(--font-sans);
+  font-weight: 800; font-size: 0.875rem;
+  color: var(--void);
+}
+
+.nav__logo-text {
+  font-family: var(--font-sans);
+  font-size: 1.125rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--cream);
+}
+
+/* Menu */
+.nav__menu {
+  display: flex; align-items: center; gap: var(--sp-1);
+}
+
+.nav__link {
+  display: block;
+  padding: var(--sp-2) var(--sp-4);
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: rgba(244,239,229,0.65);
+  border-radius: var(--r-full);
+  transition: color var(--t-fast), background var(--t-fast);
+  white-space: nowrap;
+}
+
+.nav__link:hover {
+  color: var(--cream);
+  background: rgba(255,255,255,0.06);
+}
+
+/* CTA button nav */
+.nav__cta {
+  display: inline-flex; align-items: center; gap: var(--sp-2);
+  padding: 0.6em 1.4em;
+  background: var(--cream);
+  color: var(--void);
+  border-radius: var(--r-full);
+  font-size: 0.875rem;
+  font-weight: 700;
+  transition: background var(--t-fast), transform var(--t-fast);
+  white-space: nowrap;
+}
+
+.nav__cta:hover {
+  background: var(--green-glow);
+  transform: translateY(-1px);
+}
+
+/* Hamburger */
+.nav__hamburger {
+  display: none; flex-direction: column; gap: 5px;
+  background: none; border: none; cursor: pointer; padding: var(--sp-2);
+}
+.nav__hamburger span {
+  display: block; width: 22px; height: 1.5px;
+  background: var(--cream); border-radius: 2px;
+  transition: transform var(--t-fast), opacity var(--t-fast);
+}
+
+/* Mobile Nav */
+.mobile-nav {
+  display: none; position: fixed; inset: 0;
+  background: var(--abyss);
+  z-index: calc(var(--z-nav) + 10);
+  flex-direction: column;
+  padding: var(--sp-6);
+  overflow-y: auto;
+}
+.mobile-nav.is-open { display: flex; }
+
+.mobile-nav__header {
+  display: flex; align-items: center; justify-content: space-between;
+  margin-bottom: var(--sp-12);
+}
+
+.mobile-nav__close {
+  width: 44px; height: 44px;
+  border: 1px solid rgba(255,255,255,0.1); border-radius: var(--r-md);
+  background: none; color: var(--cream); cursor: pointer;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1.125rem;
+}
+
+.mobile-nav__links { display: flex; flex-direction: column; flex: 1; }
+
+.mobile-nav__link {
+  display: block; padding: var(--sp-5) 0;
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 8vw, 3rem);
+  font-weight: 600; font-style: italic;
+  color: rgba(244,239,229,0.5);
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+  transition: color var(--t-fast);
+}
+.mobile-nav__link:hover { color: var(--cream); }
+
+.mobile-nav__bottom {
+  padding-top: var(--sp-8);
+  display: flex; flex-direction: column; gap: var(--sp-3);
+}
+
+/* ══════════════════════════════════════════════════════════
+   HERO
+══════════════════════════════════════════════════════════ */
+.hero {
+  position: relative;
+  min-height: 100svh;
+  display: flex; flex-direction: column; justify-content: flex-end;
+  padding-bottom: var(--sp-16);
+  overflow: hidden;
+  background: var(--void);
+}
+
+/* Mesh gradient background */
+.hero__bg {
+  position: absolute; inset: 0;
+  background:
+    radial-gradient(ellipse 80% 60% at 20% 50%, rgba(29,77,46,0.55) 0%, transparent 60%),
+    radial-gradient(ellipse 60% 80% at 80% 20%, rgba(18,40,24,0.4) 0%, transparent 55%),
+    radial-gradient(ellipse 50% 50% at 60% 80%, rgba(45,106,79,0.2) 0%, transparent 50%),
+    var(--void);
+  animation: meshShift 12s ease-in-out infinite alternate;
+}
+
+@keyframes meshShift {
+  0%   { filter: hue-rotate(0deg) brightness(1); }
+  50%  { filter: hue-rotate(8deg) brightness(1.05); }
+  100% { filter: hue-rotate(-4deg) brightness(0.98); }
+}
+
+/* Canvas fibers */
+.hero__canvas {
+  position: absolute; inset: 0;
+  width: 100%; height: 100%;
+  z-index: 1; opacity: 0.35;
+}
+
+/* Glow orb */
+.hero__orb {
+  position: absolute;
+  width: 600px; height: 600px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(45,106,79,0.35) 0%, transparent 70%);
+  top: -100px; left: -100px;
+  pointer-events: none; z-index: 1;
+  animation: orbFloat 8s ease-in-out infinite;
+}
+
+@keyframes orbFloat {
+  0%, 100% { transform: translate(0,0) scale(1); }
+  33%       { transform: translate(60px, 40px) scale(1.1); }
+  66%       { transform: translate(-30px, 60px) scale(0.95); }
+}
+
+.hero__content {
+  position: relative; z-index: 2;
+  padding-top: 120px;
+}
+
+.hero__top {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: var(--sp-8);
+  margin-bottom: var(--sp-12);
+}
+
+.hero__label {
+  display: flex; align-items: center; gap: var(--sp-3);
+  margin-bottom: var(--sp-6);
+  opacity: 0;
+  animation: fadeUp 0.8s 0.2s var(--ease-out-expo) both;
+}
+
+.hero__label-dot {
+  width: 6px; height: 6px; border-radius: 50%;
+  background: var(--green-glow);
+  box-shadow: 0 0 8px var(--green-glow);
+  animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.5; transform: scale(0.8); }
+}
+
+.hero__title {
+  font-family: var(--font-display);
+  font-size: clamp(4.5rem, 11vw, 12rem);
+  font-weight: 600;
+  line-height: 0.9;
+  letter-spacing: -0.02em;
+  color: var(--cream);
+  opacity: 0;
+  animation: fadeUp 1s 0.3s var(--ease-out-expo) both;
+}
+
+.hero__title em {
+  font-style: italic;
+  color: transparent;
+  -webkit-text-stroke: 1px rgba(244,239,229,0.4);
+}
+
+.hero__title .word-green {
+  color: var(--green-glow);
+  -webkit-text-stroke: 0;
+  text-shadow: 0 0 80px rgba(61,255,138,0.3);
+}
+
+.hero__right {
+  flex-shrink: 0;
+  max-width: 320px;
+  opacity: 0;
+  animation: fadeUp 0.8s 0.7s var(--ease-out-expo) both;
+}
+
+.hero__sub {
+  font-size: 1rem;
+  color: rgba(244,239,229,0.55);
+  line-height: 1.75;
+  margin-bottom: var(--sp-8);
+}
+
+.hero__bottom {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: var(--sp-6);
+  padding-top: var(--sp-10);
+  border-top: 1px solid rgba(255,255,255,0.06);
+  opacity: 0;
+  animation: fadeUp 0.8s 0.9s var(--ease-out-expo) both;
+}
+
+.hero__stats {
+  display: flex; gap: var(--sp-10);
+}
+
+.hero__stat-num {
+  font-family: var(--font-display);
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 600;
+  color: var(--cream);
+  line-height: 1;
+  letter-spacing: -0.02em;
+}
+
+.hero__stat-label {
+  font-size: 0.75rem;
+  color: rgba(244,239,229,0.4);
+  margin-top: var(--sp-1);
+  letter-spacing: 0.04em;
+}
+
+.hero__actions {
+  display: flex; align-items: center; gap: var(--sp-3);
+}
+
+/* Scroll cue */
+.scroll-cue {
+  position: absolute; bottom: var(--sp-8); left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  display: flex; flex-direction: column; align-items: center; gap: var(--sp-2);
+  opacity: 0;
+  animation: fadeIn 1s 1.5s both;
+}
+
+.scroll-cue__track {
+  width: 1px; height: 60px;
+  background: linear-gradient(to bottom, rgba(61,255,138,0.6), transparent);
+  position: relative; overflow: hidden;
+}
+
+.scroll-cue__dot {
+  width: 1px; height: 20px;
+  background: var(--green-glow);
+  position: absolute; top: -20px;
+  animation: scrollDot 1.8s ease-in-out infinite;
+}
+
+@keyframes scrollDot {
+  to { top: 60px; opacity: 0; }
+}
+
+.scroll-cue__text {
+  font-size: 0.625rem; letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: rgba(244,239,229,0.3);
+  writing-mode: vertical-rl;
+}
+
+/* ══════════════════════════════════════════════════════════
+   MARQUEE TICKER
+══════════════════════════════════════════════════════════ */
+.marquee {
+  background: var(--green-mid);
+  padding-block: var(--sp-4);
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.marquee__track {
+  display: inline-flex; gap: var(--sp-8);
+  animation: marqueeScroll 28s linear infinite;
+}
+
+.marquee__track:hover { animation-play-state: paused; }
+
+@keyframes marqueeScroll {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+
+.marquee__item {
+  display: inline-flex; align-items: center; gap: var(--sp-8);
+  font-size: 0.8125rem; font-weight: 600;
+  letter-spacing: 0.1em; text-transform: uppercase;
+  color: rgba(244,239,229,0.85);
+}
+
+.marquee__sep {
+  width: 4px; height: 4px; border-radius: 50%;
+  background: rgba(244,239,229,0.4);
+  flex-shrink: 0;
+}
+
+/* ══════════════════════════════════════════════════════════
+   BUTTONS
+══════════════════════════════════════════════════════════ */
+.btn {
+  display: inline-flex; align-items: center; justify-content: center;
+  gap: var(--sp-2);
+  border-radius: var(--r-full);
+  font-size: 0.9375rem; font-weight: 600;
+  letter-spacing: -0.01em;
+  cursor: pointer; border: none;
+  transition: transform var(--t-fast), box-shadow var(--t-fast), background var(--t-fast), color var(--t-fast);
+  white-space: nowrap; text-decoration: none;
+  padding: 0.85em 2em;
+}
+
+.btn:hover { transform: translateY(-2px); }
+.btn:active { transform: translateY(0); }
+
+.btn--primary {
+  background: var(--cream);
+  color: var(--void);
+  box-shadow: 0 4px 24px rgba(0,0,0,0.3);
+}
+.btn--primary:hover {
+  background: var(--green-glow);
+  box-shadow: 0 8px 40px rgba(61,255,138,0.25);
+}
+
+.btn--glow {
+  background: var(--green-mid);
+  color: var(--cream);
+  box-shadow: 0 0 0 1px rgba(61,255,138,0.15), 0 4px 24px rgba(45,106,79,0.4);
+}
+.btn--glow:hover {
+  background: var(--green-forest);
+  box-shadow: 0 0 0 1px rgba(61,255,138,0.3), 0 8px 40px rgba(45,106,79,0.5);
+}
+
+.btn--ghost {
+  background: rgba(255,255,255,0.06);
+  color: rgba(244,239,229,0.8);
+  border: 1px solid rgba(255,255,255,0.1);
+  backdrop-filter: blur(8px);
+}
+.btn--ghost:hover {
+  background: rgba(255,255,255,0.1);
+  color: var(--cream);
+  border-color: rgba(255,255,255,0.2);
+}
+
+.btn--outline-light {
+  background: transparent;
+  color: var(--green-forest);
+  border: 1.5px solid var(--green-forest);
+}
+.btn--outline-light:hover {
+  background: var(--green-forest);
+  color: var(--cream);
+}
+
+.btn--lg { padding: 1em 2.5em; font-size: 1.0625rem; }
+.btn--sm { padding: 0.55em 1.4em; font-size: 0.8125rem; }
+
+.btn svg { width: 16px; height: 16px; flex-shrink: 0; }
+
+/* Arrow button */
+.btn-arrow {
+  display: inline-flex; align-items: center; gap: var(--sp-3);
+  font-size: 0.875rem; font-weight: 600;
+  color: rgba(244,239,229,0.5);
+  transition: color var(--t-fast), gap var(--t-fast);
+}
+.btn-arrow:hover { color: var(--cream); gap: var(--sp-5); }
+
+.btn-arrow__circle {
+  width: 36px; height: 36px; border-radius: 50%;
+  border: 1px solid currentColor;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1rem;
+  transition: background var(--t-fast), color var(--t-fast);
+}
+.btn-arrow:hover .btn-arrow__circle {
+  background: var(--cream); color: var(--void);
+}
+
+/* ══════════════════════════════════════════════════════════
+   SECTION UTILITY
+══════════════════════════════════════════════════════════ */
+.section { padding-block: var(--sp-32); }
+.section--sm { padding-block: var(--sp-20); }
+.section--lg { padding-block: var(--sp-40); }
+
+.section-tag {
+  display: inline-flex; align-items: center; gap: var(--sp-3);
+  margin-bottom: var(--sp-5);
+}
+.section-tag__line {
+  width: 28px; height: 1px;
+  background: currentColor; opacity: 0.4;
+}
+.section-tag__text {
+  font-size: 0.6875rem; font-weight: 700;
+  letter-spacing: 0.16em; text-transform: uppercase;
+  opacity: 0.5;
+}
+
+/* ══════════════════════════════════════════════════════════
+   INTRO / NUMBERS SECTION
+══════════════════════════════════════════════════════════ */
+.intro {
+  background: var(--cream);
+  color: var(--anthracite);
+  position: relative; overflow: hidden;
+}
+
+.intro__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--sp-16);
+  align-items: center;
+}
+
+.intro__numbers {
+  display: grid; grid-template-columns: 1fr 1fr; gap: var(--sp-8);
+}
+
+.intro__number {
+  padding: var(--sp-8);
+  border: 1px solid rgba(0,0,0,0.08);
+  border-radius: var(--r-xl);
+  transition: border-color var(--t-mid), box-shadow var(--t-mid);
+}
+.intro__number:hover {
+  border-color: var(--green-mid);
+  box-shadow: 0 8px 40px rgba(35,84,47,0.1);
+}
+
+.intro__num-value {
+  font-family: var(--font-display);
+  font-size: clamp(2.5rem, 4vw, 4.5rem);
+  font-weight: 600; font-style: italic;
+  color: var(--green-forest);
+  line-height: 1;
+  letter-spacing: -0.02em;
+}
+
+.intro__num-label {
+  font-size: 0.8125rem; color: var(--stone-dark);
+  margin-top: var(--sp-2); line-height: 1.5;
+}
+
+.intro__copy h2 {
+  font-family: var(--font-display);
+  font-size: clamp(2.2rem, 4vw, 4rem);
+  font-weight: 600; font-style: italic;
+  color: var(--anthracite);
+  line-height: 1.1; letter-spacing: -0.02em;
+  margin-bottom: var(--sp-6);
+}
+
+.intro__copy p {
+  font-size: 1.0625rem; color: var(--stone-dark);
+  line-height: 1.8; margin-bottom: var(--sp-4);
+}
+
+/* ══════════════════════════════════════════════════════════
+   PROCESS — DARK CINEMATIC
+══════════════════════════════════════════════════════════ */
+.process {
+  background: var(--dark-2);
+  position: relative; overflow: hidden;
+}
+
+.process::after {
+  content: '';
+  position: absolute; top: -40%; right: -10%;
+  width: 500px; height: 500px; border-radius: 50%;
+  background: radial-gradient(circle, rgba(45,106,79,0.12) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.process__header { margin-bottom: var(--sp-16); }
+
+.process__header h2 {
+  font-family: var(--font-display);
+  font-size: clamp(2.5rem, 5vw, 5.5rem);
+  font-weight: 600; font-style: italic;
+  letter-spacing: -0.02em; line-height: 1;
+  margin-top: var(--sp-4);
+}
+
+.process__steps {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1px;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.05);
+  border-radius: var(--r-xl);
+  overflow: hidden;
+}
+
+.process__step {
+  background: var(--dark-2);
+  padding: var(--sp-8);
+  transition: background var(--t-mid);
+  position: relative;
+}
+
+.process__step::before {
+  content: '';
+  position: absolute; top: 0; left: 0; right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, var(--green-mid), var(--green-glow));
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform var(--t-mid);
+}
+
+.process__step:hover { background: var(--dark-3); }
+.process__step:hover::before { transform: scaleX(1); }
+
+.process__step-icon {
+  font-size: 1.75rem; margin-bottom: var(--sp-5);
+}
+
+.process__step-num {
+  font-family: var(--font-display);
+  font-size: 3.5rem; font-weight: 600; font-style: italic;
+  color: rgba(255,255,255,0.04);
+  line-height: 1; margin-bottom: var(--sp-3);
+  letter-spacing: -0.02em;
+}
+
+.process__step h3 {
+  font-size: 0.9375rem; font-weight: 700;
+  color: var(--cream); margin-bottom: var(--sp-2);
+  letter-spacing: -0.01em;
+}
+
+.process__step p {
+  font-size: 0.8125rem; color: rgba(244,239,229,0.45);
+  line-height: 1.65;
+}
+
+/* ══════════════════════════════════════════════════════════
+   WHY / FEATURES — LIGHT
+══════════════════════════════════════════════════════════ */
+.features {
+  background: var(--cream);
+  color: var(--anthracite);
+}
+
+.features__header {
+  text-align: center; max-width: 720px;
+  margin-inline: auto; margin-bottom: var(--sp-16);
+}
+
+.features__header h2 {
+  font-family: var(--font-display);
+  font-size: clamp(2.5rem, 5vw, 5rem);
+  font-weight: 600; font-style: italic;
+  letter-spacing: -0.02em; line-height: 1.05;
+  margin-block: var(--sp-4);
+}
+
+.features__header p {
+  font-size: 1.0625rem; color: var(--stone-dark); line-height: 1.75;
+}
+
+.features__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--sp-5);
+}
+
+.feature-card {
+  background: var(--cream-warm);
+  border: 1px solid rgba(0,0,0,0.06);
+  border-radius: var(--r-xl);
+  padding: var(--sp-8);
+  position: relative; overflow: hidden;
+  transition: transform var(--t-mid), box-shadow var(--t-mid), border-color var(--t-mid);
+}
+
+.feature-card::after {
+  content: '';
+  position: absolute; bottom: 0; left: 0; right: 0; height: 3px;
+  background: linear-gradient(90deg, var(--green-forest), var(--green-sage));
+  transform: scaleX(0); transform-origin: left;
+  transition: transform var(--t-mid);
+}
+
+.feature-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 24px 64px rgba(0,0,0,0.1);
+  border-color: rgba(45,106,79,0.2);
+}
+.feature-card:hover::after { transform: scaleX(1); }
+
+.feature-card__icon {
+  width: 52px; height: 52px; border-radius: var(--r-lg);
+  background: rgba(45,106,79,0.1);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1.375rem; margin-bottom: var(--sp-5);
+}
+
+.feature-card h3 {
+  font-size: 1.125rem; font-weight: 700;
+  color: var(--green-forest); letter-spacing: -0.015em;
+  margin-bottom: var(--sp-3);
+}
+
+.feature-card p {
+  font-size: 0.9375rem; color: var(--stone-dark); line-height: 1.7;
+}
+
+/* ══════════════════════════════════════════════════════════
+   PRODUCTS — DARK GRID
+══════════════════════════════════════════════════════════ */
+.products {
+  background: var(--dark-1);
+}
+
+.products__header {
+  display: flex; align-items: flex-end;
+  justify-content: space-between; gap: var(--sp-6);
+  margin-bottom: var(--sp-12);
+}
+
+.products__header h2 {
+  font-family: var(--font-display);
+  font-size: clamp(2.5rem, 5vw, 5rem);
+  font-weight: 600; font-style: italic;
+  letter-spacing: -0.02em; line-height: 1;
+  max-width: 560px;
+}
+
+.products__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--sp-4);
+}
+
+.product-card {
+  background: var(--dark-3);
+  border: 1px solid rgba(255,255,255,0.05);
+  border-radius: var(--r-xl);
+  overflow: hidden;
+  transition: transform var(--t-mid), border-color var(--t-mid), box-shadow var(--t-mid);
+}
+
+.product-card:hover {
+  transform: translateY(-8px);
+  border-color: rgba(61,255,138,0.15);
+  box-shadow: 0 24px 64px rgba(0,0,0,0.4), 0 0 0 1px rgba(61,255,138,0.08);
+}
+
+.product-card__image {
+  aspect-ratio: 4/3;
+  position: relative; overflow: hidden;
+}
+
+.product-card__badge {
+  position: absolute; top: var(--sp-3); left: var(--sp-3);
+  font-size: 0.6875rem; font-weight: 700;
+  letter-spacing: 0.1em; text-transform: uppercase;
+  padding: 0.3em 0.8em; border-radius: var(--r-full);
+  background: rgba(61,255,138,0.15);
+  border: 1px solid rgba(61,255,138,0.25);
+  color: var(--green-glow);
+  backdrop-filter: blur(8px);
+}
+
+.product-card__body { padding: var(--sp-5); }
+
+.product-card__name {
+  font-size: 1.0625rem; font-weight: 700;
+  color: var(--cream); letter-spacing: -0.015em;
+  margin-bottom: var(--sp-2);
+}
+
+.product-card__desc {
+  font-size: 0.8125rem; color: rgba(244,239,229,0.45);
+  line-height: 1.65; margin-bottom: var(--sp-4);
+}
+
+.product-card__specs {
+  display: flex; gap: var(--sp-3);
+  font-size: 0.75rem; color: rgba(244,239,229,0.35);
+  margin-bottom: var(--sp-4);
+}
+
+.product-card__footer {
+  padding: var(--sp-4) var(--sp-5);
+  border-top: 1px solid rgba(255,255,255,0.05);
+  display: flex; align-items: center; justify-content: space-between;
+}
+
+.product-card__price {
+  font-size: 0.9375rem; font-weight: 700; color: var(--green-light);
+}
+
+/* ══════════════════════════════════════════════════════════
+   SUSTAINABILITY — FULL BLEED DARK
+══════════════════════════════════════════════════════════ */
+.sust {
+  background: var(--dark-2);
+  position: relative; overflow: hidden;
+}
+
+.sust__grid {
+  display: grid; grid-template-columns: 1fr 1fr;
+  min-height: 600px;
+}
+
+.sust__left {
+  padding: var(--sp-24) var(--sp-16) var(--sp-24) 0;
+  display: flex; flex-direction: column; justify-content: center;
+}
+
+.sust__right {
+  background: var(--green-forest);
+  padding: var(--sp-24) 0 var(--sp-24) var(--sp-16);
+  display: flex; flex-direction: column; justify-content: center;
+  position: relative; overflow: hidden;
+}
+
+.sust__right::before {
+  content: '';
+  position: absolute; inset: 0;
+  background: radial-gradient(ellipse 80% 80% at 80% 20%, rgba(61,255,138,0.08) 0%, transparent 60%);
+}
+
+.sust__big-number {
+  font-family: var(--font-display);
+  font-size: clamp(5rem, 12vw, 14rem);
+  font-weight: 600; font-style: italic;
+  line-height: 1; letter-spacing: -0.02em;
+  color: rgba(255,255,255,0.06);
+  position: absolute; bottom: -40px; right: -20px;
+  pointer-events: none; user-select: none;
+}
+
+.sust__left h2 {
+  font-family: var(--font-display);
+  font-size: clamp(2.2rem, 4vw, 4.5rem);
+  font-weight: 600; font-style: italic;
+  letter-spacing: -0.02em; line-height: 1.05;
+  margin-block: var(--sp-4) var(--sp-6);
+}
+
+.sust__left p {
+  font-size: 1rem; color: rgba(244,239,229,0.55);
+  line-height: 1.8; margin-bottom: var(--sp-3);
+}
+
+.sust__pillars {
+  display: grid; grid-template-columns: 1fr 1fr; gap: var(--sp-4);
+  position: relative; z-index: 1;
+}
+
+.sust__pillar {
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: var(--r-lg); padding: var(--sp-5);
+  transition: background var(--t-mid);
+}
+.sust__pillar:hover { background: rgba(255,255,255,0.1); }
+
+.sust__pillar-icon { font-size: 1.5rem; margin-bottom: var(--sp-3); }
+.sust__pillar h3 { font-size: 0.9375rem; font-weight: 700; margin-bottom: var(--sp-2); }
+.sust__pillar p { font-size: 0.8125rem; color: rgba(244,239,229,0.55); line-height: 1.6; }
+
+/* ══════════════════════════════════════════════════════════
+   PROJECTS
+══════════════════════════════════════════════════════════ */
+.projects { background: var(--cream); color: var(--anthracite); }
+
+.projects__header {
+  display: flex; align-items: flex-end;
+  justify-content: space-between; gap: var(--sp-6);
+  margin-bottom: var(--sp-12);
+}
+
+.projects__header h2 {
+  font-family: var(--font-display);
+  font-size: clamp(2.5rem, 5vw, 5rem);
+  font-weight: 600; font-style: italic;
+  letter-spacing: -0.02em; line-height: 1;
+}
+
+.projects__grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 340px 240px;
+  gap: var(--sp-4);
+}
+
+.project-card {
+  border-radius: var(--r-xl); overflow: hidden;
+  position: relative; cursor: pointer;
+}
+
+.project-card--a { grid-column: span 7; grid-row: span 2; }
+.project-card--b { grid-column: span 5; }
+.project-card--c { grid-column: span 3; }
+.project-card--d { grid-column: span 2; }
+
+.project-card__bg {
+  width: 100%; height: 100%;
+  transition: transform var(--t-slow);
+}
+
+.project-card:hover .project-card__bg { transform: scale(1.04); }
+
+.project-card__overlay {
+  position: absolute; inset: 0;
+  background: linear-gradient(to top, rgba(5,10,6,0.9) 0%, transparent 55%);
+  padding: var(--sp-6);
+  display: flex; flex-direction: column; justify-content: flex-end;
+}
+
+.project-card__tag {
+  display: inline-block;
+  font-size: 0.6875rem; font-weight: 700;
+  letter-spacing: 0.1em; text-transform: uppercase;
+  padding: 0.3em 0.8em; border-radius: var(--r-full);
+  background: rgba(61,255,138,0.12);
+  border: 1px solid rgba(61,255,138,0.2);
+  color: var(--green-glow);
+  margin-bottom: var(--sp-2); width: fit-content;
+  backdrop-filter: blur(8px);
+}
+
+.project-card__title {
+  font-size: 1.0625rem; font-weight: 700;
+  color: var(--cream); letter-spacing: -0.015em;
+}
+
+.project-card__sub {
+  font-size: 0.8125rem; color: rgba(244,239,229,0.55);
+  margin-top: var(--sp-1);
+}
+
+/* ══════════════════════════════════════════════════════════
+   TESTIMONIALS
+══════════════════════════════════════════════════════════ */
+.testimonials { background: var(--abyss); }
+
+.testimonials__header {
+  text-align: center; max-width: 600px;
+  margin-inline: auto; margin-bottom: var(--sp-16);
+}
+
+.testimonials__header h2 {
+  font-family: var(--font-display);
+  font-size: clamp(2.5rem, 5vw, 5rem);
+  font-weight: 600; font-style: italic;
+  letter-spacing: -0.02em; line-height: 1.05;
+  margin-block: var(--sp-4);
+}
+
+.testimonials__grid {
+  display: grid; grid-template-columns: repeat(3, 1fr);
+  gap: var(--sp-5);
+}
+
+.testimonial-card {
+  background: var(--dark-2);
+  border: 1px solid rgba(255,255,255,0.05);
+  border-radius: var(--r-xl); padding: var(--sp-8);
+  position: relative; overflow: hidden;
+  transition: border-color var(--t-mid), box-shadow var(--t-mid);
+}
+
+.testimonial-card:hover {
+  border-color: rgba(61,255,138,0.12);
+  box-shadow: 0 16px 48px rgba(0,0,0,0.3);
+}
+
+.testimonial-card__quote {
+  font-family: var(--font-display);
+  font-size: 5rem; line-height: 1; font-style: italic;
+  color: rgba(61,255,138,0.15);
+  position: absolute; top: var(--sp-4); right: var(--sp-6);
+  pointer-events: none;
+}
+
+.testimonial-card__stars {
+  color: #E8A020; font-size: 0.875rem;
+  letter-spacing: 2px; margin-bottom: var(--sp-5);
+}
+
+.testimonial-card__text {
+  font-size: 0.9375rem; line-height: 1.8;
+  color: rgba(244,239,229,0.7); margin-bottom: var(--sp-6);
+  font-style: italic;
+}
+
+.testimonial-card__author { display: flex; align-items: center; gap: var(--sp-3); }
+
+.testimonial-card__avatar {
+  width: 42px; height: 42px; border-radius: 50%;
+  background: linear-gradient(135deg, var(--green-mid), var(--green-sage));
+  display: flex; align-items: center; justify-content: center;
+  font-weight: 700; font-size: 0.8125rem; color: var(--cream);
+  flex-shrink: 0;
+}
+
+.testimonial-card__name {
+  font-size: 0.9375rem; font-weight: 700; color: var(--cream);
+  letter-spacing: -0.01em;
+}
+.testimonial-card__role {
+  font-size: 0.75rem; color: rgba(244,239,229,0.35);
+  margin-top: 2px;
+}
+
+/* ══════════════════════════════════════════════════════════
+   STATS BAND
+══════════════════════════════════════════════════════════ */
+.stats-band { background: var(--green-forest); padding-block: var(--sp-20); }
+
+.stats-band__grid {
+  display: grid; grid-template-columns: repeat(4, 1fr);
+  gap: var(--sp-8); text-align: center;
+}
+
+.stats-band__val {
+  font-family: var(--font-display);
+  font-size: clamp(3rem, 6vw, 6rem);
+  font-weight: 600; font-style: italic;
+  color: var(--cream); line-height: 1;
+  letter-spacing: -0.02em;
+}
+
+.stats-band__label {
+  font-size: 0.8125rem; color: rgba(244,239,229,0.5);
+  margin-top: var(--sp-2); line-height: 1.5;
+}
+
+/* ══════════════════════════════════════════════════════════
+   FAQ
+══════════════════════════════════════════════════════════ */
+.faq { background: var(--cream); color: var(--anthracite); }
+
+.faq__inner {
+  display: grid; grid-template-columns: 1fr 2fr;
+  gap: var(--sp-16); align-items: start;
+}
+
+.faq__left h2 {
+  font-family: var(--font-display);
+  font-size: clamp(2.5rem, 4vw, 4.5rem);
+  font-weight: 600; font-style: italic;
+  letter-spacing: -0.02em; line-height: 1.05;
+  margin-block: var(--sp-4) var(--sp-6);
+  position: sticky; top: 120px;
+}
+
+.faq__list { display: flex; flex-direction: column; }
+
+.faq__item { border-bottom: 1px solid rgba(0,0,0,0.08); }
+
+.faq__question {
+  display: flex; align-items: center; justify-content: space-between;
+  gap: var(--sp-4); padding-block: var(--sp-6);
+  cursor: pointer; background: none; border: none; width: 100%;
+  text-align: left; font-size: 1rem; font-weight: 600;
+  color: var(--anthracite);
+  transition: color var(--t-fast);
+}
+.faq__question:hover { color: var(--green-forest); }
+
+.faq__icon {
+  width: 28px; height: 28px; border-radius: 50%; flex-shrink: 0;
+  border: 1.5px solid rgba(0,0,0,0.15);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1.125rem; font-weight: 300; color: var(--stone);
+  transition: transform var(--t-fast), background var(--t-fast), border-color var(--t-fast), color var(--t-fast);
+}
+
+.faq__item.is-open .faq__icon {
+  transform: rotate(45deg);
+  background: var(--green-forest); border-color: var(--green-forest); color: var(--cream);
+}
+
+.faq__answer {
+  display: none; padding-bottom: var(--sp-6);
+  font-size: 0.9375rem; color: var(--stone-dark); line-height: 1.8;
+}
+.faq__item.is-open .faq__answer { display: block; }
+
+/* ══════════════════════════════════════════════════════════
+   BLOG
+══════════════════════════════════════════════════════════ */
+.blog { background: var(--dark-1); }
+
+.blog__header {
+  display: flex; align-items: flex-end;
+  justify-content: space-between; gap: var(--sp-6);
+  margin-bottom: var(--sp-12);
+}
+
+.blog__header h2 {
+  font-family: var(--font-display);
+  font-size: clamp(2.5rem, 5vw, 5rem);
+  font-weight: 600; font-style: italic;
+  letter-spacing: -0.02em; line-height: 1;
+}
+
+.blog__grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--sp-5); }
+
+.blog-card {
+  background: var(--dark-3);
+  border: 1px solid rgba(255,255,255,0.05);
+  border-radius: var(--r-xl); overflow: hidden;
+  transition: transform var(--t-mid), border-color var(--t-mid);
+}
+.blog-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(255,255,255,0.1);
+}
+
+.blog-card__img {
+  aspect-ratio: 16/10;
+  overflow: hidden;
+}
+
+.blog-card__img-inner {
+  width: 100%; height: 100%;
+  transition: transform var(--t-slow);
+}
+.blog-card:hover .blog-card__img-inner { transform: scale(1.04); }
+
+.blog-card__body { padding: var(--sp-6); }
+
+.blog-card__cat {
+  font-size: 0.6875rem; font-weight: 700;
+  letter-spacing: 0.1em; text-transform: uppercase;
+  color: var(--green-light); margin-bottom: var(--sp-3);
+  display: block;
+}
+
+.blog-card__title {
+  font-size: 1.0625rem; font-weight: 700;
+  color: var(--cream); line-height: 1.35;
+  letter-spacing: -0.015em; margin-bottom: var(--sp-3);
+}
+.blog-card__title a { transition: color var(--t-fast); }
+.blog-card__title a:hover { color: var(--green-light); }
+
+.blog-card__excerpt {
+  font-size: 0.8125rem; color: rgba(244,239,229,0.4);
+  line-height: 1.7; margin-bottom: var(--sp-4);
+}
+
+.blog-card__meta {
+  font-size: 0.75rem; color: rgba(244,239,229,0.25);
+  display: flex; gap: var(--sp-3);
+}
+
+/* ══════════════════════════════════════════════════════════
+   CERTS / LOGOS
+══════════════════════════════════════════════════════════ */
+.certs {
+  background: var(--cream); padding-block: var(--sp-12);
+  border-block: 1px solid rgba(0,0,0,0.06);
+  color: var(--anthracite);
+}
+
+.certs__label {
+  text-align: center; font-size: 0.6875rem;
+  font-weight: 700; letter-spacing: 0.16em;
+  text-transform: uppercase; color: var(--stone);
+  margin-bottom: var(--sp-8);
+}
+
+.certs__logos {
+  display: flex; align-items: center; justify-content: center;
+  gap: var(--sp-12); flex-wrap: wrap;
+}
+
+.cert-item {
+  text-align: center; opacity: 0.4;
+  transition: opacity var(--t-fast);
+}
+.cert-item:hover { opacity: 1; }
+
+.cert-item__name {
+  font-size: 0.8125rem; font-weight: 800;
+  letter-spacing: 0.08em; text-transform: uppercase;
+  color: var(--anthracite);
+}
+.cert-item__sub {
+  font-size: 0.625rem; color: var(--stone); margin-top: 2px;
+}
+
+/* ══════════════════════════════════════════════════════════
+   CTA FINAL
+══════════════════════════════════════════════════════════ */
+.cta-final {
+  background: var(--void);
+  padding-block: var(--sp-40);
+  text-align: center;
+  position: relative; overflow: hidden;
+}
+
+.cta-final::before {
+  content: '';
+  position: absolute; top: 50%; left: 50%;
+  transform: translate(-50%,-50%);
+  width: 800px; height: 400px; border-radius: 50%;
+  background: radial-gradient(ellipse, rgba(45,106,79,0.2) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.cta-final h2 {
+  font-family: var(--font-display);
+  font-size: clamp(3rem, 7vw, 8rem);
+  font-weight: 600; font-style: italic;
+  letter-spacing: -0.02em; line-height: 0.95;
+  position: relative; z-index: 1;
+  margin-block: var(--sp-6) var(--sp-10);
+}
+
+.cta-final h2 em {
+  color: var(--green-glow);
+  font-style: italic;
+  text-shadow: 0 0 80px rgba(61,255,138,0.35);
+}
+
+.cta-final p {
+  font-size: 1.125rem; color: rgba(244,239,229,0.45);
+  max-width: 540px; margin-inline: auto;
+  line-height: 1.75; margin-bottom: var(--sp-10);
+  position: relative; z-index: 1;
+}
+
+.cta-final__actions {
+  display: flex; align-items: center; justify-content: center;
+  gap: var(--sp-4); flex-wrap: wrap;
+  position: relative; z-index: 1;
+}
+
+/* ══════════════════════════════════════════════════════════
+   FOOTER
+══════════════════════════════════════════════════════════ */
+.footer {
+  background: var(--dark-1);
+  border-top: 1px solid rgba(255,255,255,0.05);
+  padding-top: var(--sp-20);
+}
+
+.footer__top {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: var(--sp-10);
+  padding-bottom: var(--sp-16);
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+
+.footer__brand {}
+
+.footer__logo {
+  display: flex; align-items: center; gap: var(--sp-3);
+  margin-bottom: var(--sp-5);
+}
+
+.footer__logo-mark {
+  width: 34px; height: 34px; border-radius: var(--r-md);
+  background: linear-gradient(135deg, var(--green-mid), var(--green-sage));
+  display: flex; align-items: center; justify-content: center;
+  font-weight: 800; font-size: 0.875rem; color: var(--void);
+}
+
+.footer__logo-text {
+  font-size: 1.125rem; font-weight: 800;
+  letter-spacing: 0.08em; text-transform: uppercase; color: var(--cream);
+}
+
+.footer__tagline {
+  font-size: 0.875rem; color: rgba(244,239,229,0.35);
+  line-height: 1.75; margin-bottom: var(--sp-6); max-width: 300px;
+}
+
+.footer__socials { display: flex; gap: var(--sp-3); }
+
+.footer__social {
+  width: 36px; height: 36px; border-radius: var(--r-md);
+  border: 1px solid rgba(255,255,255,0.08);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 0.75rem; font-weight: 700;
+  color: rgba(244,239,229,0.35);
+  transition: background var(--t-fast), color var(--t-fast), border-color var(--t-fast);
+}
+.footer__social:hover {
+  background: var(--green-mid); color: var(--cream);
+  border-color: transparent;
+}
+
+.footer__col-title {
+  font-size: 0.6875rem; font-weight: 700;
+  letter-spacing: 0.14em; text-transform: uppercase;
+  color: rgba(244,239,229,0.25); margin-bottom: var(--sp-5);
+}
+
+.footer__links { display: flex; flex-direction: column; gap: var(--sp-3); }
+
+.footer__link {
+  font-size: 0.875rem; color: rgba(244,239,229,0.5);
+  transition: color var(--t-fast);
+}
+.footer__link:hover { color: var(--cream); }
+
+.footer__bottom {
+  padding-block: var(--sp-6);
+  display: flex; align-items: center; justify-content: space-between;
+  gap: var(--sp-4);
+  font-size: 0.8125rem; color: rgba(244,239,229,0.2);
+}
+
+.footer__bottom-links { display: flex; gap: var(--sp-5); }
+.footer__bottom a { color: rgba(244,239,229,0.2); transition: color var(--t-fast); }
+.footer__bottom a:hover { color: rgba(244,239,229,0.6); }
+
+/* ══════════════════════════════════════════════════════════
+   PAGE HERO (inner pages)
+══════════════════════════════════════════════════════════ */
+.page-hero {
+  background: var(--dark-1);
+  padding-top: calc(80px + var(--sp-16));
+  padding-bottom: var(--sp-16);
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+
+.page-hero__eyebrow {
+  font-size: 0.6875rem; font-weight: 700;
+  letter-spacing: 0.16em; text-transform: uppercase;
+  color: var(--green-light); margin-bottom: var(--sp-4);
+}
+
+.page-hero h1 {
+  font-family: var(--font-display);
+  font-size: clamp(2.5rem, 5vw, 5.5rem);
+  font-weight: 600; font-style: italic;
+  letter-spacing: -0.02em; line-height: 1;
+  margin-bottom: var(--sp-5);
+}
+
+.page-hero p {
+  font-size: 1.0625rem; color: rgba(244,239,229,0.5);
+  max-width: 600px; line-height: 1.75;
+}
+
+/* Breadcrumb */
+.breadcrumb {
+  display: flex; align-items: center; gap: var(--sp-2);
+  font-size: 0.8125rem; color: rgba(244,239,229,0.3);
+  margin-bottom: var(--sp-6);
+}
+.breadcrumb a { transition: color var(--t-fast); }
+.breadcrumb a:hover { color: var(--green-light); }
+.breadcrumb__sep { opacity: 0.3; font-size: 0.625rem; }
+
+/* ══════════════════════════════════════════════════════════
+   FORMS
+══════════════════════════════════════════════════════════ */
+.form-group { display: flex; flex-direction: column; gap: var(--sp-2); }
+
+.form-label {
+  font-size: 0.8125rem; font-weight: 600;
+  color: rgba(244,239,229,0.6);
+}
+
+.form-input, .form-select, .form-textarea {
+  width: 100%;
+  padding: 0.875em 1.125em;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: var(--r-md);
+  color: var(--cream); font-size: 0.9375rem;
+  outline: none;
+  transition: border-color var(--t-fast), box-shadow var(--t-fast);
+}
+
+.form-input:focus, .form-select:focus, .form-textarea:focus {
+  border-color: rgba(61,255,138,0.3);
+  box-shadow: 0 0 0 3px rgba(61,255,138,0.06);
+}
+
+.form-input::placeholder, .form-textarea::placeholder { color: rgba(244,239,229,0.2); }
+
+.form-textarea { resize: vertical; min-height: 130px; }
+.form-select option { background: var(--dark-2); }
+
+/* Light form variant */
+.form--light .form-label { color: var(--stone-dark); }
+.form--light .form-input, .form--light .form-select, .form--light .form-textarea {
+  background: var(--cream-warm); border-color: rgba(0,0,0,0.1); color: var(--anthracite);
+}
+.form--light .form-input::placeholder { color: var(--stone); }
+
+/* Honeypot */
+.form-honey { position: absolute; left: -9999px; opacity: 0; pointer-events: none; }
+
+/* Form status */
+.form-status { font-size: 0.9375rem; font-weight: 500; padding: 0.75rem 1rem; border-radius: var(--r-md); display: none; }
+[data-state="ok"] { background: rgba(61,255,138,0.08); color: var(--green-light); display: block !important; }
+[data-state="err"] { background: rgba(255,80,80,0.08); color: #ff8080; display: block !important; }
+[data-state="sending"] { background: rgba(255,255,255,0.04); color: rgba(244,239,229,0.5); display: block !important; }
+
+/* ══════════════════════════════════════════════════════════
+   CALCULATOR
+══════════════════════════════════════════════════════════ */
+.calc { background: var(--dark-1); }
+
+.calc__box {
+  background: var(--dark-3);
+  border: 1px solid rgba(255,255,255,0.07);
+  border-radius: var(--r-2xl);
+  padding: var(--sp-12);
+  max-width: 800px; margin-inline: auto;
+  box-shadow: 0 32px 80px rgba(0,0,0,0.4);
+}
+
+.calc__result {
+  background: linear-gradient(135deg, var(--green-forest), var(--green-mid));
+  border-radius: var(--r-xl); padding: var(--sp-8);
+  margin-top: var(--sp-6); text-align: center;
+  position: relative; overflow: hidden;
+}
+
+.calc__result::before {
+  content: '';
+  position: absolute; top: -50%; right: -10%;
+  width: 300px; height: 300px; border-radius: 50%;
+  background: rgba(61,255,138,0.08);
+  pointer-events: none;
+}
+
+.calc__result-value {
+  font-family: var(--font-display);
+  font-size: clamp(2.5rem, 5vw, 4.5rem);
+  font-weight: 600; font-style: italic;
+  letter-spacing: -0.02em; line-height: 1;
+}
+
+.calc__result-label {
+  font-size: 0.875rem; color: rgba(244,239,229,0.6);
+  margin-top: var(--sp-2);
+}
+
+/* ══════════════════════════════════════════════════════════
+   FLOATING ELEMENTS
+══════════════════════════════════════════════════════════ */
+.wa-float {
+  position: fixed; bottom: var(--sp-6); right: var(--sp-6);
+  z-index: var(--z-toast);
+  width: 56px; height: 56px; border-radius: 50%;
+  background: #25D366; color: #fff;
+  display: flex; align-items: center; justify-content: center;
+  box-shadow: 0 4px 24px rgba(37,211,102,0.4);
+  transition: transform var(--t-fast), box-shadow var(--t-fast);
+}
+.wa-float:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 40px rgba(37,211,102,0.55);
+}
+
+.cookie-banner {
+  position: fixed; bottom: var(--sp-5); left: var(--sp-5);
+  max-width: 420px; z-index: var(--z-toast);
+  background: var(--dark-3);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: var(--r-xl); padding: var(--sp-6);
+  box-shadow: 0 24px 64px rgba(0,0,0,0.5);
+  display: none;
+}
+.cookie-banner.is-visible { display: block; }
+.cookie-banner p { font-size: 0.875rem; color: rgba(244,239,229,0.5); line-height: 1.6; margin-bottom: var(--sp-4); }
+.cookie-banner__actions { display: flex; gap: var(--sp-3); flex-wrap: wrap; }
+
+/* ══════════════════════════════════════════════════════════
+   SCROLL REVEAL
+══════════════════════════════════════════════════════════ */
+[data-reveal] {
+  opacity: 0; transform: translateY(36px);
+  transition: opacity 0.8s var(--ease-out-expo), transform 0.8s var(--ease-out-expo);
+}
+[data-reveal].is-visible { opacity: 1; transform: translateY(0); }
+[data-reveal="left"] { transform: translateX(-36px); }
+[data-reveal="right"] { transform: translateX(36px); }
+[data-reveal="left"].is-visible, [data-reveal="right"].is-visible { transform: translateX(0); }
+[data-reveal="scale"] { transform: scale(0.94); }
+[data-reveal="scale"].is-visible { transform: scale(1); }
+
+[data-delay="100"] { transition-delay: 0.1s; }
+[data-delay="200"] { transition-delay: 0.2s; }
+[data-delay="300"] { transition-delay: 0.3s; }
+[data-delay="400"] { transition-delay: 0.4s; }
+[data-delay="500"] { transition-delay: 0.5s; }
+[data-delay="600"] { transition-delay: 0.6s; }
+
+/* ══════════════════════════════════════════════════════════
+   ANIMATIONS
+══════════════════════════════════════════════════════════ */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(32px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes fadeIn {
+  from { opacity: 0; } to { opacity: 1; }
+}
+
+/* ══════════════════════════════════════════════════════════
+   UTILITIES
+══════════════════════════════════════════════════════════ */
+.sr-only {
+  position: absolute; width: 1px; height: 1px; padding: 0;
+  margin: -1px; overflow: hidden; clip: rect(0,0,0,0);
+  white-space: nowrap; border: 0;
+}
+.text-glow { color: var(--green-glow); text-shadow: 0 0 40px rgba(61,255,138,0.4); }
+.mt-8 { margin-top: var(--sp-8); }
+.grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: var(--sp-8); }
+.grid-3 { display: grid; grid-template-columns: repeat(3,1fr); gap: var(--sp-6); }
+
+/* ============================================================
+   CELLARIS v2 — responsive.css
+   ============================================================ */
+
+/* ── 1200px ─────────────────────────────────────────────── */
+@media (max-width: 1200px) {
+  .products__grid { grid-template-columns: repeat(2, 1fr); }
+  .footer__top { grid-template-columns: 1fr 1fr 1fr; }
+  .footer__brand { grid-column: span 3; }
+
+  .sust__left { padding-right: var(--sp-8); }
+  .sust__right { padding-left: var(--sp-8); }
+
+  .projects__grid {
+    grid-template-rows: 280px 220px;
+  }
+}
+
+/* ── 992px ──────────────────────────────────────────────── */
+@media (max-width: 992px) {
+  .nav__menu { display: none; }
+  .nav__hamburger { display: flex; }
+
+  .hero__top { flex-direction: column; align-items: flex-start; }
+  .hero__right { max-width: 100%; }
+  .hero__stats { gap: var(--sp-8); }
+  .hero__bottom { flex-direction: column; align-items: flex-start; gap: var(--sp-6); }
+
+  .intro__grid { grid-template-columns: 1fr; }
+  .intro__numbers { order: -1; }
+
+  .process__steps { grid-template-columns: repeat(3, 1fr); }
+
+  .features__grid { grid-template-columns: repeat(2, 1fr); }
+
+  .sust__grid { grid-template-columns: 1fr; }
+  .sust__left { padding: var(--sp-16) 0; }
+  .sust__right { padding: var(--sp-16) 0; }
+  .sust__big-number { font-size: 8rem; }
+
+  .testimonials__grid { grid-template-columns: 1fr 1fr; }
+  .blog__grid { grid-template-columns: 1fr 1fr; }
+
+  .projects__grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+  }
+  .project-card--a { grid-column: span 2; }
+  .project-card--b { grid-column: span 1; }
+  .project-card--c { grid-column: span 1; }
+  .project-card--d { grid-column: span 2; }
+
+  .stats-band__grid { grid-template-columns: repeat(2, 1fr); gap: var(--sp-10) var(--sp-6); }
+
+  .faq__inner { grid-template-columns: 1fr; }
+  .faq__left h2 { position: static; }
+
+  .footer__top { grid-template-columns: 1fr 1fr; }
+  .footer__brand { grid-column: span 2; }
+  .footer__bottom { flex-direction: column; text-align: center; }
+  .footer__bottom-links { flex-wrap: wrap; justify-content: center; }
+}
+
+/* ── 768px ──────────────────────────────────────────────── */
+@media (max-width: 768px) {
+  :root {
+    --sp-32: 5rem;
+    --sp-40: 6rem;
+    --sp-24: 4rem;
+    --sp-20: 3rem;
+  }
+
+  .container { padding-inline: var(--sp-5); }
+
+  .hero__title { font-size: clamp(3.5rem, 13vw, 6rem); }
+
+  .marquee { display: none; }
+
+  .process__steps { grid-template-columns: 1fr 1fr; }
+
+  .features__grid { grid-template-columns: 1fr; }
+
+  .products__grid { grid-template-columns: 1fr; }
+  .products__header { flex-direction: column; align-items: flex-start; }
+
+  .projects__grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+  .project-card--a, .project-card--b,
+  .project-card--c, .project-card--d { grid-column: span 1; }
+  .project-card { min-height: 260px; }
+
+  .testimonials__grid { grid-template-columns: 1fr; }
+  .blog__grid { grid-template-columns: 1fr; }
+  .blog__header { flex-direction: column; align-items: flex-start; }
+  .projects__header { flex-direction: column; align-items: flex-start; }
+
+  .cta-final__actions { flex-direction: column; }
+
+  .stats-band__grid { grid-template-columns: 1fr 1fr; }
+
+  .footer__top { grid-template-columns: 1fr; }
+  .footer__brand { grid-column: span 1; }
+}
+
+/* ── 576px ──────────────────────────────────────────────── */
+@media (max-width: 576px) {
+  .hero__stats { flex-direction: column; gap: var(--sp-4); }
+  .hero__actions { flex-direction: column; width: 100%; }
+  .hero__actions .btn { width: 100%; justify-content: center; }
+
+  .intro__numbers { grid-template-columns: 1fr 1fr; }
+
+  .process__steps { grid-template-columns: 1fr; }
+
+  .stats-band__grid { grid-template-columns: 1fr; }
+
+  .grid-2 { grid-template-columns: 1fr; }
+  .grid-3 { grid-template-columns: 1fr; }
+
+  .calc__box { padding: var(--sp-6); }
+
+  .cookie-banner { left: var(--sp-4); right: var(--sp-4); }
+  .wa-float { bottom: var(--sp-4); right: var(--sp-4); }
+}
+
+/* ── Print ──────────────────────────────────────────────── */
+@media print {
+  .nav, .footer, .wa-float, .cookie-banner, .cursor, .cursor-ring,
+  .reading-progress, body::before { display: none !important; }
+  body { background: #fff; color: #000; cursor: auto; }
+}
+
+/* ── Reduced motion ─────────────────────────────────────── */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+  html { scroll-behavior: auto; }
+  [data-reveal] { opacity: 1; transform: none; }
+  .cursor, .cursor-ring { display: none; }
+  body { cursor: auto; }
+}
+
+</style>
+
+  <!-- JSON-LD -->
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://cellaris.ro/#organization","name":"CELLARIS","url":"https://cellaris.ro","description":"Producător și montator de izolații premium din fibre de celuloză reciclată.","address":{"@type":"PostalAddress","addressLocality":"Ploiești","addressRegion":"Prahova","addressCountry":"RO"},"contactPoint":{"@type":"ContactPoint","contactType":"customer service","telephone":"+40-XXX-XXX-XXX","email":"contact@cellaris.ro"}},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Ce este izolația cu fibre de celuloză?","acceptedAnswer":{"@type":"Answer","text":"Izolația cu fibre de celuloză este un material natural și ecologic obținut prin reciclarea hârtiei. Fibrele sunt tratate cu agenți ignifugi și antimicrobieni naturali, obținând un produs respirabil, eficient termic și acustic, cu o amprentă de carbon extrem de redusă."}},{"@type":"Question","name":"Cât costă izolația cu celuloză?","acceptedAnswer":{"@type":"Answer","text":"Costul izolației cu celuloză CELLARIS variază între 28 și 58 lei/m² în funcție de suprafață, grosime și sistemul ales (Standard, nZEB sau Casă Pasivă)."}},{"@type":"Question","name":"CELLARIS oferă și montaj?","acceptedAnswer":{"@type":"Answer","text":"Da. CELLARIS controlează întregul lanț: de la producția fibrelor de celuloză până la montajul profesional cu echipe proprii certificate."}}]}]}
+  </script>
+</head>
+<body>
+
+<!-- Cursor -->
+<div class="cursor" id="cursor" aria-hidden="true"></div>
+<div class="cursor-ring" id="cursor-ring" aria-hidden="true"></div>
+
+<!-- Progress bar -->
+<div class="reading-progress" id="reading-progress" aria-hidden="true"></div>
+
+<!-- ═══════════════════════════════════════════════════════
+     NAV
+═══════════════════════════════════════════════════════ -->
+<nav class="nav" id="nav" role="navigation" aria-label="Navigare principală">
+  <div class="container">
+    <div class="nav__inner">
+      <a href="#" class="nav__logo" aria-label="CELLARIS Acasă">
+        <div class="nav__logo-mark" aria-hidden="true">C</div>
+        <span class="nav__logo-text">CELLARIS</span>
+      </a>
+
+      <ul class="nav__menu" role="menubar">
+        <li><a href="#despre" class="nav__link">Despre noi</a></li>
+        <li><a href="#produse" class="nav__link">Produse</a></li>
+        <li><a href="#" class="nav__link">Servicii</a></li>
+        <li><a href="#proiecte" class="nav__link">Proiecte</a></li>
+        <li><a href="#blog" class="nav__link">Blog</a></li>
+        <li><a href="#contact" class="nav__link">Contact</a></li>
+      </ul>
+
+      <div style="display:flex;align-items:center;gap:0.75rem;">
+        <a href="#contact" class="nav__cta">Ofertă Gratuită</a>
+        <button class="nav__hamburger" aria-label="Meniu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- Mobile nav -->
+<nav class="mobile-nav" aria-label="Meniu mobil">
+  <div class="mobile-nav__header">
+    <div class="nav__logo">
+      <div class="nav__logo-mark" aria-hidden="true">C</div>
+      <span class="nav__logo-text">CELLARIS</span>
+    </div>
+    <button class="mobile-nav__close" aria-label="Închide">✕</button>
+  </div>
+  <div class="mobile-nav__links">
+    <a href="#despre" class="mobile-nav__link">Despre noi</a>
+    <a href="#produse" class="mobile-nav__link">Produse</a>
+    <a href="#" class="mobile-nav__link">Servicii</a>
+    <a href="#proiecte" class="mobile-nav__link">Proiecte</a>
+    <a href="#blog" class="mobile-nav__link">Blog</a>
+    <a href="#contact" class="mobile-nav__link">Contact</a>
+  </div>
+  <div class="mobile-nav__bottom">
+    <a href="#intrebari" class="btn btn--ghost">Calculator Preț</a>
+    <a href="#contact" class="btn btn--primary">Ofertă Gratuită</a>
+  </div>
+</nav>
+
+<!-- ═══════════════════════════════════════════════════════
+     HERO
+═══════════════════════════════════════════════════════ -->
+<section class="hero" aria-label="Hero CELLARIS">
+  <div class="hero__bg" aria-hidden="true"></div>
+  <div class="hero__orb" aria-hidden="true"></div>
+  <canvas id="hero-canvas" class="hero__canvas" aria-hidden="true"></canvas>
+
+  <div class="container hero__content">
+
+    <div class="hero__top">
+      <div style="flex:1;">
+        <div class="hero__label" aria-label="Descriere scurtă">
+          <span class="hero__label-dot" aria-hidden="true"></span>
+          <span class="label" style="color:rgba(61,255,138,0.7);font-size:0.6875rem;">Producție proprie · Montaj profesional · Standard nZEB &amp; Casă Pasivă</span>
+        </div>
+
+        <h1 class="hero__title">
+          Natura<br>
+          <em>reciclată.</em><br>
+          Casa ta<br>
+          <span class="word-green">protejată.</span>
+        </h1>
+      </div>
+
+      <div class="hero__right">
+        <p class="hero__sub">
+          CELLARIS transformă hârtia reciclată în izolație premium din fibre de celuloză —
+          material natural, respirabil și performant pentru case eficiente energetic.
+          De la colectare la montaj, controlăm fiecare etapă.
+        </p>
+        <div class="hero__actions">
+          <a href="#produse" class="btn btn--primary btn--lg">
+            Descoperă Produsele
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M2 8a.75.75 0 0 1 .75-.75h8.69L8.22 4.03a.75.75 0 0 1 1.06-1.06l4.5 4.5a.75.75 0 0 1 0 1.06l-4.5 4.5a.75.75 0 0 1-1.06-1.06l3.22-3.22H2.75A.75.75 0 0 1 2 8Z" clip-rule="evenodd"/></svg>
+          </a>
+          <a href="#contact" class="btn btn--ghost btn--lg">Cerere Ofertă</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero__bottom">
+      <div class="hero__stats" role="list" aria-label="Statistici cheie">
+        <div role="listitem">
+          <div class="hero__stat-num" data-counter="500" data-suffix="+">500+</div>
+          <div class="hero__stat-label">Proiecte finalizate</div>
+        </div>
+        <div role="listitem">
+          <div class="hero__stat-num" data-counter="90" data-suffix="%">90%</div>
+          <div class="hero__stat-label">Reducere amprentă carbon</div>
+        </div>
+        <div role="listitem">
+          <div class="hero__stat-num" data-counter="50" data-suffix="+ ani">50+ ani</div>
+          <div class="hero__stat-label">Durată de viață garantată</div>
+        </div>
+      </div>
+      <a href="#despre" class="btn-arrow">
+        <span class="btn-arrow__circle" aria-hidden="true">↓</span>
+        Află povestea CELLARIS
+      </a>
+    </div>
+
+  </div>
+
+  <div class="scroll-cue" aria-hidden="true">
+    <span class="scroll-cue__text">Scroll</span>
+    <div class="scroll-cue__track"><div class="scroll-cue__dot"></div></div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════
+     MARQUEE
+═══════════════════════════════════════════════════════ -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee__track">
+    <!-- doubled for infinite scroll -->
+    <span class="marquee__item">Izolație cu Celuloză<span class="marquee__sep"></span></span>
+    <span class="marquee__item">Fibră de Celuloză<span class="marquee__sep"></span></span>
+    <span class="marquee__item">Fibră de Lemn<span class="marquee__sep"></span></span>
+    <span class="marquee__item">Case nZEB<span class="marquee__sep"></span></span>
+    <span class="marquee__item">Case Pasive<span class="marquee__sep"></span></span>
+    <span class="marquee__item">Sustenabilitate<span class="marquee__sep"></span></span>
+    <span class="marquee__item">Reciclare 100%<span class="marquee__sep"></span></span>
+    <span class="marquee__item">Producător România<span class="marquee__sep"></span></span>
+    <span class="marquee__item">Montaj Certificat<span class="marquee__sep"></span></span>
+    <span class="marquee__item">Carbon Negativ<span class="marquee__sep"></span></span>
+    <!-- repeat -->
+    <span class="marquee__item">Izolație cu Celuloză<span class="marquee__sep"></span></span>
+    <span class="marquee__item">Fibră de Celuloză<span class="marquee__sep"></span></span>
+    <span class="marquee__item">Fibră de Lemn<span class="marquee__sep"></span></span>
+    <span class="marquee__item">Case nZEB<span class="marquee__sep"></span></span>
+    <span class="marquee__item">Case Pasive<span class="marquee__sep"></span></span>
+    <span class="marquee__item">Sustenabilitate<span class="marquee__sep"></span></span>
+    <span class="marquee__item">Reciclare 100%<span class="marquee__sep"></span></span>
+    <span class="marquee__item">Producător România<span class="marquee__sep"></span></span>
+    <span class="marquee__item">Montaj Certificat<span class="marquee__sep"></span></span>
+    <span class="marquee__item">Carbon Negativ<span class="marquee__sep"></span></span>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════
+     INTRO — NUMERE MARI
+═══════════════════════════════════════════════════════ -->
+<section class="intro section" id="despre" aria-labelledby="intro-h">
+  <div class="container">
+    <div class="intro__grid">
+
+      <div class="intro__numbers" data-reveal>
+        <div class="intro__number">
+          <div class="intro__num-value" data-counter="90" data-suffix="%">90%</div>
+          <div class="intro__num-label">Reducere amprentă de carbon față de soluții convenționale</div>
+        </div>
+        <div class="intro__number">
+          <div class="intro__num-value" data-counter="75" data-suffix="%">75%</div>
+          <div class="intro__num-label">Economie posibilă la facturile de energie termică</div>
+        </div>
+        <div class="intro__number" style="grid-column:span 2;">
+          <div class="intro__num-value" style="font-size:clamp(1.5rem,3vw,2.5rem);">100%</div>
+          <div class="intro__num-label">Material provenit din reciclarea responsabilă a hârtiei — zero resurse virgine</div>
+        </div>
+      </div>
+
+      <div class="intro__copy" data-reveal="right">
+        <div class="section-tag" style="color:var(--green-forest);">
+          <span class="section-tag__line"></span>
+          <span class="section-tag__text">Povestea noastră</span>
+        </div>
+        <h2 id="intro-h">Primul brand românesc de la reciclare la montaj.</h2>
+        <p>CELLARIS este singurul brand din România care controlează <strong>întregul lanț valoric</strong>: colectăm deșeuri de hârtie, le reciclăm, producem fibra de celuloză premium, asigurăm distribuția și executăm montajul cu echipe proprii certificate.</p>
+        <p>Nu vindem doar un produs. Oferim o soluție completă pentru case mai calde, mai sănătoase, cu consum energetic redus și o amprentă de carbon cu până la <strong>90% mai mică</strong> față de materialele convenționale.</p>
+        <div style="margin-top:2rem;">
+          <a href="#despre" class="btn-arrow" style="color:var(--green-forest);">
+            <span class="btn-arrow__circle" aria-hidden="true" style="border-color:var(--green-forest);color:var(--green-forest);">→</span>
+            Află mai mult despre CELLARIS
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════
+     PROCES
+═══════════════════════════════════════════════════════ -->
+<section class="process section" id="proces" aria-labelledby="process-h">
+  <div class="container">
+    <div class="process__header" data-reveal>
+      <div class="section-tag">
+        <span class="section-tag__line"></span>
+        <span class="section-tag__text">Cum funcționăm</span>
+      </div>
+      <h2 id="process-h" style="font-family:var(--font-display);font-size:clamp(2.5rem,5vw,5.5rem);font-weight:600;font-style:italic;letter-spacing:-0.02em;line-height:1;margin-top:1rem;">
+        De la hârtie reciclată<br>la casa ta perfectă.
+      </h2>
+    </div>
+
+    <div class="process__steps" data-reveal>
+      <div class="process__step">
+        <div class="process__step-icon" aria-hidden="true">♻️</div>
+        <div class="process__step-num" aria-hidden="true">01</div>
+        <h3>Colectare responsabilă</h3>
+        <p>Colectăm deșeuri de hârtie din surse certificate — ziare, reviste, carton — preluând responsabilitatea de la prima etapă.</p>
+      </div>
+      <div class="process__step">
+        <div class="process__step-icon" aria-hidden="true">🏭</div>
+        <div class="process__step-num" aria-hidden="true">02</div>
+        <h3>Reciclare &amp; Procesare</h3>
+        <p>Hârtia este tocată, tratată și transformată în fibre fine, ignifugate și antimicrobiene cu substanțe naturale aprobate.</p>
+      </div>
+      <div class="process__step">
+        <div class="process__step-icon" aria-hidden="true">🌿</div>
+        <div class="process__step-num" aria-hidden="true">03</div>
+        <h3>Producție Premium</h3>
+        <p>Fibra CELLARIS produsă conform EN 15101, cu parametri tehnici verificați în laboratoare acreditate europene.</p>
+      </div>
+      <div class="process__step">
+        <div class="process__step-icon" aria-hidden="true">🚛</div>
+        <div class="process__step-num" aria-hidden="true">04</div>
+        <h3>Distribuție Națională</h3>
+        <p>Livrăm în toată România, cu prioritate pentru București, Ilfov, Prahova și regiunile limitrofe.</p>
+      </div>
+      <div class="process__step">
+        <div class="process__step-icon" aria-hidden="true">🏠</div>
+        <div class="process__step-num" aria-hidden="true">05</div>
+        <h3>Montaj Certificat</h3>
+        <p>Echipele proprii CELLARIS instalează profesional — garanție completă, termoviziune și blower door test.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════
+     FEATURES
+═══════════════════════════════════════════════════════ -->
+<section class="features section" id="de-ce" aria-labelledby="feat-h">
+  <div class="container">
+    <div class="features__header" data-reveal>
+      <div class="section-tag" style="color:var(--green-forest);justify-content:center;">
+        <span class="section-tag__line"></span>
+        <span class="section-tag__text">De ce CELLARIS</span>
+      </div>
+      <h2 id="feat-h">Un material diferit.<br>O alegere superioară.</h2>
+      <p>Fibra de celuloză CELLARIS nu este un compromis ecologic — este cea mai performantă și responsabilă alegere pentru o casă eficientă energetic.</p>
+    </div>
+
+    <div class="features__grid">
+      <div class="feature-card" data-reveal data-delay="100">
+        <div class="feature-card__icon" aria-hidden="true">🌡️</div>
+        <h3>Performanță termică superioară</h3>
+        <p>Conductivitate λ = 0,038 W/mK. Capacitate termică de 3–4× mai mare decât vata bazaltică — confort tot anul, fără supraîncălzire estivală.</p>
+      </div>
+      <div class="feature-card" data-reveal data-delay="200">
+        <div class="feature-card__icon" aria-hidden="true">🌍</div>
+        <h3>Amprentă de carbon negativă</h3>
+        <p>Fibra de celuloză stochează CO₂ în loc să îl emită. Reducere de până la 90% față de soluțiile convenționale din plastic sau minerale.</p>
+      </div>
+      <div class="feature-card" data-reveal data-delay="300">
+        <div class="feature-card__icon" aria-hidden="true">💨</div>
+        <h3>Material respirabil și sănătos</h3>
+        <p>Reglează natural umiditatea interioară, elimină riscul de condens și mucegai. Fără fibre sintetice, fără emanații chimice.</p>
+      </div>
+      <div class="feature-card" data-reveal data-delay="100">
+        <div class="feature-card__icon" aria-hidden="true">🏡</div>
+        <h3>Ideal pentru nZEB și Case Pasive</h3>
+        <p>Soluțiile CELLARIS sunt proiectate pentru standardele nZEB și Passivhaus. Grosimi mari, fără punți termice, etanșeitate la aer.</p>
+      </div>
+      <div class="feature-card" data-reveal data-delay="200">
+        <div class="feature-card__icon" aria-hidden="true">⚡</div>
+        <h3>Economie reală la energie</h3>
+        <p>Reducere cu 40–75% a costurilor de încălzire și răcire. Investiție recuperată în 5–8 ani prin economii la facturile de energie.</p>
+      </div>
+      <div class="feature-card" data-reveal data-delay="300">
+        <div class="feature-card__icon" aria-hidden="true">♻️</div>
+        <h3>Lanț complet de producție proprie</h3>
+        <p>Singurul brand din România cu producție integrată: colectare → reciclare → producție → distribuție → montaj cu garanție completă.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════
+     PRODUSE
+═══════════════════════════════════════════════════════ -->
+<section class="products section" id="produse" aria-labelledby="prod-h">
+  <div class="container">
+    <div class="products__header" data-reveal>
+      <h2 id="prod-h" style="font-family:var(--font-display);font-size:clamp(2.5rem,5vw,5rem);font-weight:600;font-style:italic;letter-spacing:-0.02em;line-height:1;">
+        Sisteme CELLARIS<br>pentru fiecare proiect.
+      </h2>
+      <a href="#produse" class="btn btn--ghost">Toate produsele →</a>
+    </div>
+
+    <div class="products__grid">
+
+      <article class="product-card" data-reveal data-delay="100" itemscope itemtype="https://schema.org/Product">
+        <div class="product-card__image" style="background:linear-gradient(135deg,#1A3D28,#2D6A4F);">
+          <span class="product-card__badge">Best Seller</span>
+        </div>
+        <div class="product-card__body">
+          <h3 class="product-card__name" itemprop="name">CELLARIS Vrac Premium</h3>
+          <p class="product-card__desc" itemprop="description">Fibră pentru suflare mecanizată — acoperiș, mansardă, pod, pereți dubli.</p>
+          <div class="product-card__specs">
+            <span>λ = 0,038 W/mK</span><span>·</span><span>EN 15101</span>
+          </div>
+        </div>
+        <div class="product-card__footer">
+          <span class="product-card__price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+            <span itemprop="priceCurrency" content="RON"></span>
+            De la <strong itemprop="price" content="28">28 lei/m²</strong>
+          </span>
+          <a href="#produse" class="btn btn--glow btn--sm">Detalii</a>
+        </div>
+      </article>
+
+      <article class="product-card" data-reveal data-delay="200" itemscope itemtype="https://schema.org/Product">
+        <div class="product-card__image" style="background:linear-gradient(135deg,#0C160D,#1A3D28);">
+          <span class="product-card__badge">nZEB</span>
+        </div>
+        <div class="product-card__body">
+          <h3 class="product-card__name" itemprop="name">CELLARIS Sistem nZEB</h3>
+          <p class="product-card__desc" itemprop="description">Pachet complet pentru case cu consum energetic aproape zero + montaj certificat.</p>
+          <div class="product-card__specs">
+            <span>200–300mm</span><span>·</span><span>Garanție 10 ani</span>
+          </div>
+        </div>
+        <div class="product-card__footer">
+          <span class="product-card__price">De la <strong>35 lei/m²</strong></span>
+          <a href="#produse" class="btn btn--glow btn--sm">Detalii</a>
+        </div>
+      </article>
+
+      <article class="product-card" data-reveal data-delay="300" itemscope itemtype="https://schema.org/Product">
+        <div class="product-card__image" style="background:linear-gradient(135deg,#23542F,#52826A);">
+          <span class="product-card__badge">Casă Pasivă</span>
+        </div>
+        <div class="product-card__body">
+          <h3 class="product-card__name" itemprop="name">CELLARIS Passivhaus System</h3>
+          <p class="product-card__desc" itemprop="description">Soluție completă Passivhaus cu celuloză + membrană + blower door test inclus.</p>
+          <div class="product-card__specs">
+            <span>300–400mm</span><span>·</span><span>Certified</span>
+          </div>
+        </div>
+        <div class="product-card__footer">
+          <span class="product-card__price">De la <strong>42 lei/m²</strong></span>
+          <a href="#produse" class="btn btn--glow btn--sm">Detalii</a>
+        </div>
+      </article>
+
+      <article class="product-card" data-reveal data-delay="400" itemscope itemtype="https://schema.org/Product">
+        <div class="product-card__image" style="background:linear-gradient(135deg,#52826A,#7FB99A);">
+          <span class="product-card__badge">Fibră Lemn</span>
+        </div>
+        <div class="product-card__body">
+          <h3 class="product-card__name" itemprop="name">CELLARIS Woodfibre Panels</h3>
+          <p class="product-card__desc" itemprop="description">Panouri rigide din fibre de lemn — termoizolare + acustică superioară.</p>
+          <div class="product-card__specs">
+            <span>λ = 0,042 W/mK</span><span>·</span><span>Acustic A</span>
+          </div>
+        </div>
+        <div class="product-card__footer">
+          <span class="product-card__price">De la <strong>38 lei/m²</strong></span>
+          <a href="#produse" class="btn btn--glow btn--sm">Detalii</a>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════
+     STATS BAND
+═══════════════════════════════════════════════════════ -->
+<div class="stats-band" aria-label="Impact CELLARIS" role="region">
+  <div class="container">
+    <div class="stats-band__grid" role="list">
+      <div data-reveal role="listitem">
+        <div class="stats-band__val" data-counter="90" data-suffix="%">90%</div>
+        <div class="stats-band__label">Reducere amprentă de carbon față de soluții convenționale</div>
+      </div>
+      <div data-reveal data-delay="150" role="listitem">
+        <div class="stats-band__val" data-counter="75" data-suffix="%">75%</div>
+        <div class="stats-band__label">Economie posibilă la factura de energie</div>
+      </div>
+      <div data-reveal data-delay="300" role="listitem">
+        <div class="stats-band__val" data-counter="50" data-suffix="+">50+</div>
+        <div class="stats-band__label">Ani durată de viață a produsului</div>
+      </div>
+      <div data-reveal data-delay="450" role="listitem">
+        <div class="stats-band__val" data-counter="500" data-suffix="+">500+</div>
+        <div class="stats-band__label">Proiecte finalizate în toată România</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════
+     SUSTENABILITATE
+═══════════════════════════════════════════════════════ -->
+<section class="sust section" id="sustenabilitate" aria-labelledby="sust-h">
+  <div class="container">
+    <div class="sust__grid">
+
+      <div class="sust__left" data-reveal>
+        <div class="section-tag">
+          <span class="section-tag__line"></span>
+          <span class="section-tag__text">Sustenabilitate reală</span>
+        </div>
+        <h2 id="sust-h">Nu marketing ecologic.<br>Sustenabilitate demonstrată.</h2>
+        <p>La CELLARIS, sustenabilitatea nu este un slogan — este fundamentul afacerii noastre. Fiecare sac de fibră de celuloză înseamnă hârtie salvată din groapa de gunoi, energie economisită și CO₂ stocat în pereții casei tale.</p>
+        <p>Economia circulară în acțiune: deșeul de azi devine izolația de mâine, iar casa ta contribuie la reducerea emisiilor de carbon pentru generațiile viitoare.</p>
+        <div style="margin-top:2rem;">
+          <a href="#despre" class="btn btn--ghost">Raport de sustenabilitate →</a>
+        </div>
+      </div>
+
+      <div class="sust__right" data-reveal="right">
+        <div class="sust__big-number" aria-hidden="true">90%</div>
+        <div class="sust__pillars">
+          <div class="sust__pillar">
+            <div class="sust__pillar-icon" aria-hidden="true">♻️</div>
+            <h3>Economie circulară</h3>
+            <p>100% din materia primă provine din reciclarea responsabilă a deșeurilor de hârtie.</p>
+          </div>
+          <div class="sust__pillar">
+            <div class="sust__pillar-icon" aria-hidden="true">🌡️</div>
+            <h3>Carbon stocat</h3>
+            <p>Fibra de celuloză stochează CO₂ pe durata întregii sale vieți — factor carbon negativ.</p>
+          </div>
+          <div class="sust__pillar">
+            <div class="sust__pillar-icon" aria-hidden="true">⚡</div>
+            <h3>Energie economisită</h3>
+            <p>Reducere cu 40–75% a consumului de energie termică în clădirile izolate cu CELLARIS.</p>
+          </div>
+          <div class="sust__pillar">
+            <div class="sust__pillar-icon" aria-hidden="true">🌲</div>
+            <h3>Natură protejată</h3>
+            <p>Nici un copac tăiat pentru producția noastră. Valorificăm ceea ce altfel ar deveni deșeu.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════
+     PROIECTE
+═══════════════════════════════════════════════════════ -->
+<section class="projects section" id="proiecte" aria-labelledby="proj-h">
+  <div class="container">
+    <div class="projects__header" data-reveal>
+      <h2 id="proj-h">Proiecte<br>CELLARIS.</h2>
+      <a href="#proiecte" class="btn btn--outline-light">Toate proiectele →</a>
+    </div>
+
+    <div class="projects__grid" data-reveal>
+      <div class="project-card project-card--a">
+        <div class="project-card__bg" style="background:linear-gradient(135deg,#0C160D,#23542F);height:100%;"></div>
+        <div class="project-card__overlay">
+          <span class="project-card__tag">Casă Pasivă</span>
+          <h3 class="project-card__title">Vilă P+1E, București Sector 1</h3>
+          <p class="project-card__sub">Izolație 380mm acoperiș + 280mm pereți · nZEB certificat</p>
+        </div>
+      </div>
+      <div class="project-card project-card--b">
+        <div class="project-card__bg" style="background:linear-gradient(135deg,#23542F,#4A7A6D);height:100%;"></div>
+        <div class="project-card__overlay">
+          <span class="project-card__tag">nZEB</span>
+          <h3 class="project-card__title">Ansamblu Rezidențial Ploiești</h3>
+          <p class="project-card__sub">12 unități · Celuloză 260mm</p>
+        </div>
+      </div>
+      <div class="project-card project-card--c">
+        <div class="project-card__bg" style="background:linear-gradient(135deg,#1A3D28,#52826A);height:100%;"></div>
+        <div class="project-card__overlay">
+          <span class="project-card__tag">Renovare</span>
+          <h3 class="project-card__title">Pod vechi, Ilfov</h3>
+          <p class="project-card__sub">Insuflare 280mm · -68% energie</p>
+        </div>
+      </div>
+      <div class="project-card project-card--d">
+        <div class="project-card__bg" style="background:linear-gradient(135deg,#2D6A4F,#7FB99A);height:100%;"></div>
+        <div class="project-card__overlay">
+          <span class="project-card__tag">Casă Lemn</span>
+          <h3 class="project-card__title">Casă Structură Lemn, Sinaia</h3>
+          <p class="project-card__sub">Pereți 240mm · Passivhaus</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════
+     TESTIMONIALE
+═══════════════════════════════════════════════════════ -->
+<section class="testimonials section" id="testimoniale" aria-labelledby="test-h">
+  <div class="container">
+    <div class="testimonials__header" data-reveal>
+      <div class="section-tag" style="justify-content:center;">
+        <span class="section-tag__line"></span>
+        <span class="section-tag__text">Ce spun clienții</span>
+      </div>
+      <h2 id="test-h">Clienți mulțumiți.<br>Case mai bune.</h2>
+    </div>
+
+    <div class="testimonials__grid" itemscope itemtype="https://schema.org/ItemList">
+
+      <div class="testimonial-card" data-reveal data-delay="100" itemscope itemtype="https://schema.org/Review" itemprop="itemListElement">
+        <div class="testimonial-card__quote" aria-hidden="true">"</div>
+        <div class="testimonial-card__stars" aria-label="5 stele">★★★★★</div>
+        <p class="testimonial-card__text" itemprop="reviewBody">"Am izolat mansarda cu CELLARIS în 2023. Factura la gaz a scăzut cu 60% față de iarna anterioară. Echipa a lucrat impecabil, fără murdărie. Recomand cu mare încredere!"</p>
+        <div class="testimonial-card__author">
+          <div class="testimonial-card__avatar" aria-hidden="true">AM</div>
+          <div>
+            <div class="testimonial-card__name" itemprop="author">Alexandru M.</div>
+            <div class="testimonial-card__role">Proprietar vilă, București Sector 2</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card" data-reveal data-delay="200" itemscope itemtype="https://schema.org/Review" itemprop="itemListElement">
+        <div class="testimonial-card__quote" aria-hidden="true">"</div>
+        <div class="testimonial-card__stars" aria-label="5 stele">★★★★★</div>
+        <p class="testimonial-card__text" itemprop="reviewBody">"Construiam o casă pasivă și am ales CELLARIS pentru că erau singurii care ofereau și consultanță tehnică, și montaj certificat. Blower door test ieșit excelent — n₅₀ = 0,42 ACH!"</p>
+        <div class="testimonial-card__author">
+          <div class="testimonial-card__avatar" aria-hidden="true">IC</div>
+          <div>
+            <div class="testimonial-card__name" itemprop="author">Ioana C.</div>
+            <div class="testimonial-card__role">Arhitect, Ploiești</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card" data-reveal data-delay="300" itemscope itemtype="https://schema.org/Review" itemprop="itemListElement">
+        <div class="testimonial-card__quote" aria-hidden="true">"</div>
+        <div class="testimonial-card__stars" aria-label="5 stele">★★★★★</div>
+        <p class="testimonial-card__text" itemprop="reviewBody">"CELLARIS a câștigat prin calitatea produsului, seriozitate și faptul că au producție proprie. Podul meu de 180m² izolat în o zi. Profesioniști adevărați."</p>
+        <div class="testimonial-card__author">
+          <div class="testimonial-card__avatar" aria-hidden="true">RP</div>
+          <div>
+            <div class="testimonial-card__name" itemprop="author">Radu P.</div>
+            <div class="testimonial-card__role">Inginer constructor, Ilfov</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════
+     FAQ
+═══════════════════════════════════════════════════════ -->
+<section class="faq section" id="intrebari" aria-labelledby="faq-h">
+  <div class="container">
+    <div class="faq__inner">
+
+      <div class="faq__left" data-reveal>
+        <div class="section-tag" style="color:var(--green-forest);">
+          <span class="section-tag__line"></span>
+          <span class="section-tag__text">FAQ</span>
+        </div>
+        <h2 id="faq-h">Tot ce trebuie să știi.</h2>
+        <p style="font-size:0.9375rem;color:var(--stone-dark);line-height:1.7;margin-top:1rem;">Nu găsești răspunsul? Echipa noastră îți răspunde în maximum 24 de ore.</p>
+        <div style="margin-top:1.5rem;">
+          <a href="#contact" class="btn btn--outline-light btn--sm">Contactează-ne →</a>
+        </div>
+      </div>
+
+      <div class="faq__list" data-reveal data-delay="200">
+        <div class="faq__item">
+          <button class="faq__question" aria-expanded="false">Ce este izolația cu fibre de celuloză?<span class="faq__icon" aria-hidden="true">+</span></button>
+          <div class="faq__answer">Izolația din fibre de celuloză este obținută prin reciclarea mecanică a hârtiei vechi. Fibrele sunt tratate cu săruri minerale naturale pentru ignifugare și cu acid boric pentru protecție antimicrobiană. Rezultatul este o fibră fină, ușoară, cu conductivitate λ = 0,038–0,040 W/mK, perfect adaptată pentru construcții sustenabile.</div>
+        </div>
+        <div class="faq__item">
+          <button class="faq__question" aria-expanded="false">Cât costă izolația cu celuloză CELLARIS?<span class="faq__icon" aria-hidden="true">+</span></button>
+          <div class="faq__answer">Costul variază în funcție de suprafață, grosime și sistem: Standard 28–38 lei/m², nZEB 35–48 lei/m², Casă Pasivă 42–58 lei/m². Toate prețurile includ material + montaj cu echipe proprii. Folosiți calculatorul nostru pentru o estimare rapidă sau contactați-ne pentru o ofertă exactă.</div>
+        </div>
+        <div class="faq__item">
+          <button class="faq__question" aria-expanded="false">Este celuloza mai bună decât vata bazaltică?<span class="faq__icon" aria-hidden="true">+</span></button>
+          <div class="faq__answer">Fibra de celuloză CELLARIS prezintă avantaje clare: amprentă de carbon negativă, capacitate termică de 3–4× mai mare (confort superior vara), reglare naturală a umidității, material respirabil și sănătos, fără punți termice (suflare mecanizată). Pentru case pasive și nZEB, fibra de celuloză este adesea soluția preferată de specialiști.</div>
+        </div>
+        <div class="faq__item">
+          <button class="faq__question" aria-expanded="false">Cât durează montajul și ce garanție oferă CELLARIS?<span class="faq__icon" aria-hidden="true">+</span></button>
+          <div class="faq__answer">O mansardă tipică de 100–150m² se izolează în 1–2 zile. CELLARIS oferă garanție de 10 ani pentru lucrările de montaj și garanție de producător pentru materiale. Produsul are o durată de viață estimată de 50+ ani.</div>
+        </div>
+        <div class="faq__item">
+          <button class="faq__question" aria-expanded="false">CELLARIS livrează și montează în toată România?<span class="faq__icon" aria-hidden="true">+</span></button>
+          <div class="faq__answer">Da. Livrare națională și montaj profesional cu echipe proprii în București, Ilfov, Prahova și în toate județele țării. Zonele prioritare sunt București și Prahova — echipe disponibile permanent.</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════
+     BLOG
+═══════════════════════════════════════════════════════ -->
+<section class="blog section" id="blog" aria-labelledby="blog-h">
+  <div class="container">
+    <div class="blog__header" data-reveal>
+      <h2 id="blog-h" style="font-family:var(--font-display);font-size:clamp(2.5rem,5vw,5rem);font-weight:600;font-style:italic;letter-spacing:-0.02em;line-height:1;">Resurse &amp;<br>articole.</h2>
+      <a href="#blog" class="btn btn--ghost">Toate articolele →</a>
+    </div>
+
+    <div class="blog__grid">
+      <article class="blog-card" data-reveal data-delay="100" itemscope itemtype="https://schema.org/BlogPosting">
+        <div class="blog-card__img">
+          <div class="blog-card__img-inner" style="background:linear-gradient(135deg,#23542F,#52826A);aspect-ratio:16/10;"></div>
+        </div>
+        <div class="blog-card__body">
+          <span class="blog-card__cat">Tehnic</span>
+          <h3 class="blog-card__title" itemprop="headline"><a href="#blog">Celuloză vs. Vată Bazaltică: comparație completă 2025</a></h3>
+          <p class="blog-card__excerpt" itemprop="description">Analiză detaliată a parametrilor tehnici, performanței termice estivale, sustenabilității și costului total pe durata de viață.</p>
+          <div class="blog-card__meta"><time itemprop="datePublished" datetime="2025-03-15">15 Martie 2025</time><span>·</span><span>8 min lectură</span></div>
+        </div>
+      </article>
+
+      <article class="blog-card" data-reveal data-delay="200" itemscope itemtype="https://schema.org/BlogPosting">
+        <div class="blog-card__img">
+          <div class="blog-card__img-inner" style="background:linear-gradient(135deg,#0C160D,#1A3D28);aspect-ratio:16/10;"></div>
+        </div>
+        <div class="blog-card__body">
+          <span class="blog-card__cat">Eficiență energetică</span>
+          <h3 class="blog-card__title" itemprop="headline"><a href="#blog">Ce înseamnă o Casă Pasivă și de ce contează izolația</a></h3>
+          <p class="blog-card__excerpt" itemprop="description">Standardul Passivhaus explicat simplu: criterii de performanță, beneficii reale și rolul esențial al izolației din celuloză.</p>
+          <div class="blog-card__meta"><time itemprop="datePublished" datetime="2025-02-20">20 Februarie 2025</time><span>·</span><span>6 min lectură</span></div>
+        </div>
+      </article>
+
+      <article class="blog-card" data-reveal data-delay="300" itemscope itemtype="https://schema.org/BlogPosting">
+        <div class="blog-card__img">
+          <div class="blog-card__img-inner" style="background:linear-gradient(135deg,#2D6A4F,#7FB99A);aspect-ratio:16/10;"></div>
+        </div>
+        <div class="blog-card__body">
+          <span class="blog-card__cat">Sustenabilitate</span>
+          <h3 class="blog-card__title" itemprop="headline"><a href="#blog">Amprenta de carbon a materialelor de construcții în 2025</a></h3>
+          <p class="blog-card__excerpt" itemprop="description">Comparăm impactul ecologic al principalelor materiale de izolație: celuloză, vată bazaltică, polistiren, spumă PU.</p>
+          <div class="blog-card__meta"><time itemprop="datePublished" datetime="2025-01-10">10 Ianuarie 2025</time><span>·</span><span>10 min lectură</span></div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════
+     CERTIFICĂRI
+═══════════════════════════════════════════════════════ -->
+<div class="certs" aria-label="Certificări și standarde">
+  <div class="container">
+    <p class="certs__label">Certificări, standarde și parteneriate</p>
+    <div class="certs__logos" role="list">
+      <div class="cert-item" role="listitem"><div class="cert-item__name">EN 15101</div><div class="cert-item__sub">Standard European</div></div>
+      <div class="cert-item" role="listitem"><div class="cert-item__name">Passivhaus</div><div class="cert-item__sub">Institut Darmstadt</div></div>
+      <div class="cert-item" role="listitem"><div class="cert-item__name">nZEB</div><div class="cert-item__sub">Directiva UE</div></div>
+      <div class="cert-item" role="listitem"><div class="cert-item__name">ISO 9001</div><div class="cert-item__sub">Sistem Calitate</div></div>
+      <div class="cert-item" role="listitem"><div class="cert-item__name">CE Mark</div><div class="cert-item__sub">Conformitate UE</div></div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════
+     CTA FINAL
+═══════════════════════════════════════════════════════ -->
+<section class="cta-final" id="contact" aria-labelledby="cta-h">
+  <div class="container" style="position:relative;z-index:1;">
+    <div class="section-tag" style="justify-content:center;" data-reveal>
+      <span class="section-tag__line"></span>
+      <span class="section-tag__text">Fă primul pas</span>
+    </div>
+    <h2 id="cta-h" class="headline" data-reveal style="font-family:var(--font-display);font-size:clamp(3rem,8vw,8rem);font-weight:600;font-style:italic;letter-spacing:-0.02em;line-height:0.95;margin-block:1.5rem 2.5rem;">
+      Casa ta merită<br>cel mai <em>bun material.</em>
+    </h2>
+    <p data-reveal>Consultanță gratuită, ofertă personalizată în 24 de ore, montaj profesional cu garanție. Fără obligații.</p>
+    <div class="cta-final__actions" data-reveal>
+      <a href="#contact" class="btn btn--primary btn--lg">Cerere Ofertă Gratuită</a>
+      <a href="#intrebari" class="btn btn--ghost btn--lg">🧮 Calculator Preț</a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════
+     FOOTER
+═══════════════════════════════════════════════════════ -->
+<footer class="footer" role="contentinfo">
+  <div class="container">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <div class="footer__logo">
+          <div class="footer__logo-mark" aria-hidden="true">C</div>
+          <span class="footer__logo-text">CELLARIS</span>
+        </div>
+        <p class="footer__tagline">Izolații premium din fibre de celuloză reciclată. Producție proprie, montaj profesional, standard nZEB și Casă Pasivă. De la reciclare la confort.</p>
+        <div class="footer__socials" aria-label="Rețele sociale">
+          <a href="https://facebook.com/cellaris.ro" class="footer__social" aria-label="Facebook" rel="noopener noreferrer" target="_blank">Fb</a>
+          <a href="https://instagram.com/cellaris.ro" class="footer__social" aria-label="Instagram" rel="noopener noreferrer" target="_blank">In</a>
+          <a href="https://linkedin.com/company/cellaris" class="footer__social" aria-label="LinkedIn" rel="noopener noreferrer" target="_blank">Li</a>
+          <a href="https://youtube.com/@cellaris" class="footer__social" aria-label="YouTube" rel="noopener noreferrer" target="_blank">Yt</a>
+        </div>
+      </div>
+
+      <div>
+        <h3 class="footer__col-title">Produse</h3>
+        <ul class="footer__links">
+          <li><a href="#produse" class="footer__link">Izolație cu Celuloză</a></li>
+          <li><a href="#produse" class="footer__link">Fibre de Lemn</a></li>
+          <li><a href="#produse" class="footer__link">Sisteme nZEB</a></li>
+          <li><a href="#produse" class="footer__link">Sisteme Casă Pasivă</a></li>
+          <li><a href="#produse" class="footer__link">Membrane &amp; Accesorii</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="footer__col-title">Servicii</h3>
+        <ul class="footer__links">
+          <li><a href="#" class="footer__link">Montaj Profesional</a></li>
+          <li><a href="#" class="footer__link">Sisteme nZEB</a></li>
+          <li><a href="#" class="footer__link">Casă Pasivă</a></li>
+          <li><a href="#" class="footer__link">Termoviziune</a></li>
+          <li><a href="#" class="footer__link">Consultanță</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="footer__col-title">Companie</h3>
+        <ul class="footer__links">
+          <li><a href="#despre" class="footer__link">Despre CELLARIS</a></li>
+          <li><a href="#proiecte" class="footer__link">Proiecte</a></li>
+          <li><a href="#blog" class="footer__link">Blog &amp; Resurse</a></li>
+          <li><a href="#intrebari" class="footer__link">Calculator Preț</a></li>
+          <li><a href="#contact" class="footer__link">Contact</a></li>
+        </ul>
+        <div style="margin-top:1.5rem;">
+          <h3 class="footer__col-title">Contact</h3>
+          <ul class="footer__links">
+            <li><a href="tel:+40XXXXXXXXX" class="footer__link">+40 XXX XXX XXX</a></li>
+            <li><a href="mailto:contact@cellaris.ro" class="footer__link">contact@cellaris.ro</a></li>
+            <li><span class="footer__link" style="cursor:default;">Ploiești, Prahova</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <p>© 2025 CELLARIS SRL. Toate drepturile rezervate.</p>
+      <div class="footer__bottom-links">
+        <a href="#">Confidențialitate</a>
+        <a href="#">Termeni</a>
+        <a href="#">Cookies</a>
+        <a href="#">Sitemap</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- WhatsApp float -->
+<a href="https://wa.me/40XXXXXXXXX" class="wa-float" aria-label="WhatsApp CELLARIS" rel="noopener noreferrer" target="_blank">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="28" height="28" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+</a>
+
+<!-- Cookie banner -->
+<div class="cookie-banner" role="alertdialog" aria-labelledby="cookie-title">
+  <h3 id="cookie-title" style="font-size:0.9375rem;font-weight:700;color:var(--cream);margin-bottom:0.5rem;">Respectăm confidențialitatea ta</h3>
+  <p>Folosim cookie-uri pentru a îmbunătăți experiența ta pe CELLARIS.</p>
+  <div class="cookie-banner__actions">
+    <button data-accept class="btn btn--glow btn--sm">Acceptă</button>
+    <button data-decline class="btn btn--ghost btn--sm">Doar esențiale</button>
+  </div>
+</div>
+
+<!-- SCRIPTS -->
+<script>
+/**
+ * CELLARIS — security.js
+ * Client-side security layer: rate limiting, bot detection,
+ * honeypot, input sanitization, CSRF token, XSS guards.
+ */
+
+'use strict';
+
+/* ── CSRF TOKEN ────────────────────────────────────────── */
+const CSRF = (function () {
+  function generate() {
+    const arr = new Uint8Array(24);
+    crypto.getRandomValues(arr);
+    return Array.from(arr, b => b.toString(16).padStart(2, '0')).join('');
+  }
+
+  function get() {
+    let token = sessionStorage.getItem('csrf_token');
+    if (!token) {
+      token = generate();
+      sessionStorage.setItem('csrf_token', token);
+    }
+    return token;
+  }
+
+  /* Inject hidden CSRF field into every form */
+  function injectForms() {
+    const token = get();
+    document.querySelectorAll('form').forEach(form => {
+      if (form.querySelector('[name="_csrf"]')) return;
+      const input = document.createElement('input');
+      input.type = 'hidden';
+      input.name = '_csrf';
+      input.value = token;
+      form.appendChild(input);
+    });
+  }
+
+  return { get, injectForms };
+})();
+
+/* ── INPUT SANITIZER ───────────────────────────────────── */
+const Sanitize = (function () {
+  const entityMap = {
+    '&': '&amp;', '<': '&lt;', '>': '&gt;',
+    '"': '&quot;', "'": '&#x27;', '/': '&#x2F;',
+  };
+
+  function escapeHtml(str) {
+    return String(str).replace(/[&<>"'/]/g, s => entityMap[s]);
+  }
+
+  function stripTags(str) {
+    return String(str).replace(/<[^>]*>/g, '');
+  }
+
+  function sanitizeInput(str, opts = {}) {
+    let out = String(str).trim();
+    out = stripTags(out);
+    if (!opts.allowHtml) out = escapeHtml(out);
+    if (opts.maxLength) out = out.slice(0, opts.maxLength);
+    return out;
+  }
+
+  return { escapeHtml, stripTags, sanitize: sanitizeInput };
+})();
+
+/* ── RATE LIMITER (in-memory, per session) ─────────────── */
+const RateLimit = (function () {
+  const store = {};
+
+  /**
+   * @param {string} key  — unique identifier (e.g. 'contact-form')
+   * @param {number} max  — max attempts
+   * @param {number} windowMs — time window in ms
+   */
+  function check(key, max = 5, windowMs = 60000) {
+    const now = Date.now();
+    if (!store[key]) store[key] = [];
+
+    /* Remove expired entries */
+    store[key] = store[key].filter(t => now - t < windowMs);
+
+    if (store[key].length >= max) return false;
+
+    store[key].push(now);
+    return true;
+  }
+
+  return { check };
+})();
+
+/* ── BOT DETECTION ─────────────────────────────────────── */
+const BotDetect = (function () {
+  let humanSignals = 0;
+  const MIN_SIGNALS = 3;
+
+  /* Count genuine user interactions */
+  ['mousemove', 'keydown', 'touchstart', 'scroll'].forEach(event => {
+    window.addEventListener(event, () => { humanSignals++; }, { passive: true, once: false });
+  });
+
+  function isHuman() {
+    return humanSignals >= MIN_SIGNALS;
+  }
+
+  /* Timing check: real users don't submit forms in < 2 seconds */
+  const formTimestamps = new WeakMap();
+
+  function stampForm(form) {
+    formTimestamps.set(form, Date.now());
+  }
+
+  function isTooFast(form, minMs = 2000) {
+    const ts = formTimestamps.get(form);
+    if (!ts) return true;
+    return Date.now() - ts < minMs;
+  }
+
+  return { isHuman, stampForm, isTooFast };
+})();
+
+/* ── FORM SECURITY LAYER ───────────────────────────────── */
+(function secureAllForms() {
+  const RATE_KEY = 'form-submit';
+  const MAX_SUBMISSIONS = 5;
+  const WINDOW_MS = 300000; /* 5 minutes */
+
+  document.querySelectorAll('form').forEach(form => {
+    /* Stamp when form becomes interactive */
+    form.addEventListener('focusin', () => BotDetect.stampForm(form), { once: true });
+
+    form.addEventListener('submit', (e) => {
+      /* 1. Honeypot */
+      const honey = form.querySelector('.form-honey input');
+      if (honey && honey.value.length > 0) {
+        e.preventDefault();
+        return;
+      }
+
+      /* 2. Bot timing check */
+      if (BotDetect.isTooFast(form, 1500)) {
+        e.preventDefault();
+        return;
+      }
+
+      /* 3. Human signals */
+      if (!BotDetect.isHuman()) {
+        e.preventDefault();
+        return;
+      }
+
+      /* 4. Rate limiting */
+      if (!RateLimit.check(RATE_KEY, MAX_SUBMISSIONS, WINDOW_MS)) {
+        e.preventDefault();
+        const statusEl = form.querySelector('.form-status');
+        if (statusEl) {
+          statusEl.textContent = 'Prea multe încercări. Vă rugăm să reveniți în câteva minute sau să ne contactați telefonic.';
+          statusEl.dataset.state = 'err';
+        }
+        return;
+      }
+
+      /* 5. Basic input sanitization for text fields */
+      form.querySelectorAll('input[type="text"], input[type="email"], textarea').forEach(field => {
+        field.value = Sanitize.sanitize(field.value, { maxLength: 2000 });
+      });
+    });
+  });
+
+  /* Inject CSRF tokens after DOM ready */
+  CSRF.injectForms();
+})();
+
+/* ── CLICK-JACKING GUARD ───────────────────────────────── */
+(function preventClickjacking() {
+  if (window.self !== window.top) {
+    document.documentElement.style.visibility = 'hidden';
+    /* Allow the server's X-Frame-Options / CSP frame-ancestors to handle this,
+       but add JS defense in case headers are missing */
+    try { window.top.location = window.self.location; } catch (_) {}
+  }
+})();
+
+/* ── EXTERNAL LINK SAFETY ──────────────────────────────── */
+(function secureExternalLinks() {
+  document.querySelectorAll('a[href^="http"]').forEach(a => {
+    try {
+      const url = new URL(a.href);
+      if (url.hostname !== location.hostname) {
+        a.setAttribute('rel', 'noopener noreferrer');
+        if (!a.hasAttribute('target')) {
+          a.setAttribute('target', '_blank');
+        }
+      }
+    } catch (_) {}
+  });
+})();
+
+/* ── CONSOLE WARNING ───────────────────────────────────── */
+(function consoleWarning() {
+  const style = [
+    'color: #1B3A2D',
+    'background: #F4EFE4',
+    'font-size: 14px',
+    'font-weight: bold',
+    'padding: 8px 16px',
+    'border-radius: 4px',
+  ].join(';');
+
+  console.log('%c⚠️ CELLARIS Security Notice', style);
+  console.log(
+    'Această consolă este destinată exclusiv dezvoltatorilor. ' +
+    'Nu introduceți cod necunoscut în această consolă — poate compromite securitatea sesiunii dumneavoastră.'
+  );
+})();
+
+/* ── EXPORT (for use in other modules if needed) ─────── */
+window.__CELLARIS_SECURITY__ = { CSRF, Sanitize, RateLimit, BotDetect };
+
+/**
+ * CELLARIS — app.js
+ * Main application JavaScript
+ */
+
+'use strict';
+
+/* ── CONSTANTS ─────────────────────────────────────────── */
+const BREAKPOINTS = { sm: 576, md: 768, lg: 992, xl: 1200 };
+
+/* ── NAVIGATION ─────────────────────────────────────────── */
+(function initNav() {
+  const nav = document.querySelector('.nav');
+  const hamburger = document.querySelector('.nav__hamburger');
+  const mobileNav = document.querySelector('.mobile-nav');
+  const mobileClose = document.querySelector('.mobile-nav__close');
+
+  if (!nav) return;
+
+  /* Sticky scroll behavior */
+  const threshold = 60;
+  const onScroll = () => {
+    const scrolled = window.scrollY > threshold;
+    nav.classList.toggle('nav--scrolled', scrolled);
+
+    /* Remove dark overlay class once scrolled */
+    if (nav.classList.contains('nav--dark')) {
+      nav.classList.toggle('nav--on-dark', !scrolled);
+    }
+  };
+
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+
+  /* Mobile menu */
+  const openMenu = () => {
+    mobileNav.classList.add('is-open');
+    document.body.style.overflow = 'hidden';
+    hamburger.setAttribute('aria-expanded', 'true');
+  };
+
+  const closeMenu = () => {
+    mobileNav.classList.remove('is-open');
+    document.body.style.overflow = '';
+    hamburger.setAttribute('aria-expanded', 'false');
+  };
+
+  if (hamburger) hamburger.addEventListener('click', openMenu);
+  if (mobileClose) mobileClose.addEventListener('click', closeMenu);
+
+  /* Close on outside click */
+  if (mobileNav) {
+    mobileNav.addEventListener('click', (e) => {
+      if (e.target === mobileNav) closeMenu();
+    });
+  }
+
+  /* Close on ESC */
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') closeMenu();
+  });
+})();
+
+/* ── READING PROGRESS BAR ──────────────────────────────── */
+(function initProgress() {
+  const bar = document.querySelector('.reading-progress');
+  if (!bar) return;
+
+  window.addEventListener('scroll', () => {
+    const h = document.documentElement;
+    const pct = (h.scrollTop / (h.scrollHeight - h.clientHeight)) * 100;
+    bar.style.width = Math.min(pct, 100) + '%';
+  }, { passive: true });
+})();
+
+/* ── HERO CANVAS ANIMATION ─────────────────────────────── */
+(function initHeroCanvas() {
+  const canvas = document.getElementById('hero-canvas');
+  if (!canvas) return;
+
+  const ctx = canvas.getContext('2d');
+  let W, H, particles, raf;
+
+  const COLORS = [
+    'rgba(107,140,114,0.4)',
+    'rgba(143,184,154,0.3)',
+    'rgba(200,220,204,0.2)',
+    'rgba(244,239,228,0.15)',
+    'rgba(74,122,109,0.35)',
+  ];
+
+  function resize() {
+    W = canvas.width = canvas.offsetWidth;
+    H = canvas.height = canvas.offsetHeight;
+    if (particles) particles.forEach(p => {
+      p.x = Math.random() * W;
+      p.y = Math.random() * H;
+    });
+  }
+
+  function createParticle() {
+    return {
+      x: Math.random() * W,
+      y: Math.random() * H,
+      r: Math.random() * 3 + 0.5,
+      vx: (Math.random() - 0.5) * 0.35,
+      vy: (Math.random() - 0.5) * 0.35,
+      life: Math.random() * 0.8 + 0.2,
+      lifeDelta: (Math.random() * 0.003 + 0.001) * (Math.random() > 0.5 ? 1 : -1),
+      color: COLORS[Math.floor(Math.random() * COLORS.length)],
+      length: Math.random() * 60 + 20,
+      angle: Math.random() * Math.PI,
+      angleSpeed: (Math.random() - 0.5) * 0.008,
+    };
+  }
+
+  function initParticles(count = 120) {
+    particles = Array.from({ length: count }, createParticle);
+  }
+
+  function drawFiber(p) {
+    const cos = Math.cos(p.angle);
+    const sin = Math.sin(p.angle);
+    const hx = (p.length / 2) * cos;
+    const hy = (p.length / 2) * sin;
+
+    ctx.beginPath();
+    ctx.moveTo(p.x - hx, p.y - hy);
+    ctx.lineTo(p.x + hx, p.y + hy);
+    ctx.strokeStyle = p.color.replace(')', `, ${p.life})`).replace('rgba(', 'rgba(');
+    ctx.lineWidth = p.r;
+    ctx.lineCap = 'round';
+    ctx.stroke();
+  }
+
+  function tick() {
+    ctx.clearRect(0, 0, W, H);
+
+    particles.forEach(p => {
+      /* Draw */
+      drawFiber(p);
+
+      /* Update */
+      p.x += p.vx;
+      p.y += p.vy;
+      p.angle += p.angleSpeed;
+      p.life += p.lifeDelta;
+
+      if (p.life <= 0.05 || p.life >= 0.95) p.lifeDelta *= -1;
+
+      /* Wrap edges */
+      if (p.x < -p.length) p.x = W + p.length;
+      if (p.x > W + p.length) p.x = -p.length;
+      if (p.y < -p.length) p.y = H + p.length;
+      if (p.y > H + p.length) p.y = -p.length;
+    });
+
+    raf = requestAnimationFrame(tick);
+  }
+
+  resize();
+  initParticles();
+  tick();
+
+  window.addEventListener('resize', () => {
+    cancelAnimationFrame(raf);
+    resize();
+    tick();
+  }, { passive: true });
+
+  /* Pause when not visible */
+  document.addEventListener('visibilitychange', () => {
+    if (document.hidden) cancelAnimationFrame(raf);
+    else tick();
+  });
+})();
+
+/* ── SCROLL REVEAL ─────────────────────────────────────── */
+(function initScrollReveal() {
+  if (!('IntersectionObserver' in window)) {
+    document.querySelectorAll('[data-reveal]').forEach(el => {
+      el.classList.add('is-visible');
+    });
+    return;
+  }
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('is-visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+
+  document.querySelectorAll('[data-reveal]').forEach(el => observer.observe(el));
+})();
+
+/* ── COUNTER ANIMATION ─────────────────────────────────── */
+(function initCounters() {
+  const counters = document.querySelectorAll('[data-counter]');
+  if (!counters.length) return;
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (!entry.isIntersecting) return;
+      const el = entry.target;
+      const target = parseFloat(el.dataset.counter);
+      const suffix = el.dataset.suffix || '';
+      const duration = 1800;
+      const start = performance.now();
+      const isDecimal = target % 1 !== 0;
+
+      function update(now) {
+        const elapsed = now - start;
+        const progress = Math.min(elapsed / duration, 1);
+        const eased = 1 - Math.pow(1 - progress, 3);
+        const val = isDecimal
+          ? (eased * target).toFixed(1)
+          : Math.round(eased * target);
+        el.textContent = val + suffix;
+        if (progress < 1) requestAnimationFrame(update);
+      }
+
+      requestAnimationFrame(update);
+      observer.unobserve(el);
+    });
+  }, { threshold: 0.5 });
+
+  counters.forEach(el => observer.observe(el));
+})();
+
+/* ── FAQ ACCORDION ─────────────────────────────────────── */
+(function initFAQ() {
+  document.querySelectorAll('.faq__item').forEach(item => {
+    const question = item.querySelector('.faq__question');
+    if (!question) return;
+
+    question.addEventListener('click', () => {
+      const isOpen = item.classList.contains('is-open');
+
+      /* Close all */
+      document.querySelectorAll('.faq__item.is-open').forEach(i => {
+        i.classList.remove('is-open');
+        const q = i.querySelector('.faq__question');
+        if (q) q.setAttribute('aria-expanded', 'false');
+      });
+
+      /* Open clicked */
+      if (!isOpen) {
+        item.classList.add('is-open');
+        question.setAttribute('aria-expanded', 'true');
+      }
+    });
+  });
+})();
+
+/* ── CALCULATOR ────────────────────────────────────────── */
+(function initCalculator() {
+  const form = document.getElementById('calc-form');
+  if (!form) return;
+
+  const resultEl = document.getElementById('calc-result');
+  const resultVal = document.getElementById('calc-value');
+  const resultRange = document.getElementById('calc-range');
+
+  /* Price per m³ by system type */
+  const PRICES = {
+    standard: { min: 28, max: 38 },
+    nzeb:     { min: 35, max: 48 },
+    pasiv:    { min: 42, max: 58 },
+  };
+
+  form.addEventListener('input', calculate);
+  form.addEventListener('change', calculate);
+
+  function calculate() {
+    const area = parseFloat(form.querySelector('[name="area"]').value) || 0;
+    const thick = parseFloat(form.querySelector('[name="thickness"]').value) || 0;
+    const type = form.querySelector('[name="system"]').value;
+
+    if (!area || !thick || !type) {
+      if (resultEl) resultEl.style.display = 'none';
+      return;
+    }
+
+    const vol = (area * thick) / 100; /* m³ */
+    const price = PRICES[type] || PRICES.standard;
+    const minCost = Math.round(vol * price.min);
+    const maxCost = Math.round(vol * price.max);
+
+    if (resultVal) resultVal.textContent = minCost.toLocaleString('ro-RO') + ' – ' + maxCost.toLocaleString('ro-RO') + ' lei';
+    if (resultRange) resultRange.textContent = `(estimare orientativă pentru ${vol.toFixed(1)} m³ de fibră de celuloză, sistem ${typeLabel(type)})`;
+    if (resultEl) resultEl.style.display = 'block';
+  }
+
+  function typeLabel(t) {
+    return { standard: 'Standard', nzeb: 'nZEB', pasiv: 'Casă Pasivă' }[t] || t;
+  }
+})();
+
+/* ── CONTACT FORM ──────────────────────────────────────── */
+(function initContactForm() {
+  const form = document.getElementById('contact-form');
+  if (!form) return;
+
+  const STATUS = {
+    idle:    '',
+    sending: 'Se trimite...',
+    ok:      'Mesaj trimis! Te vom contacta în cel mult 24 de ore.',
+    err:     'A apărut o eroare. Încearcă din nou sau sună-ne.',
+  };
+
+  const statusEl = form.querySelector('.form-status');
+  const submitBtn = form.querySelector('[type="submit"]');
+
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+
+    /* Honeypot check */
+    const honey = form.querySelector('.form-honey input');
+    if (honey && honey.value) return;
+
+    setStatus('sending');
+    submitBtn.disabled = true;
+
+    const data = new FormData(form);
+
+    try {
+      const res = await fetch(form.action, {
+        method: 'POST',
+        headers: { 'Accept': 'application/json' },
+        body: data,
+      });
+
+      if (res.ok) {
+        setStatus('ok');
+        form.reset();
+      } else {
+        setStatus('err');
+      }
+    } catch {
+      setStatus('err');
+    } finally {
+      submitBtn.disabled = false;
+    }
+  });
+
+  function setStatus(s) {
+    if (!statusEl) return;
+    statusEl.textContent = STATUS[s];
+    statusEl.dataset.state = s;
+  }
+})();
+
+/* ── COOKIE BANNER ─────────────────────────────────────── */
+(function initCookies() {
+  const banner = document.querySelector('.cookie-banner');
+  if (!banner) return;
+
+  if (!localStorage.getItem('cellaris_cookies_accepted')) {
+    banner.classList.add('is-visible');
+  }
+
+  banner.querySelector('[data-accept]')?.addEventListener('click', () => {
+    localStorage.setItem('cellaris_cookies_accepted', '1');
+    banner.classList.remove('is-visible');
+  });
+
+  banner.querySelector('[data-decline]')?.addEventListener('click', () => {
+    localStorage.setItem('cellaris_cookies_accepted', '0');
+    banner.classList.remove('is-visible');
+  });
+})();
+
+/* ── SMOOTH ANCHOR LINKS ───────────────────────────────── */
+(function initSmoothAnchors() {
+  document.querySelectorAll('a[href^="#"]').forEach(a => {
+    a.addEventListener('click', (e) => {
+      const id = a.getAttribute('href').slice(1);
+      const target = id ? document.getElementById(id) : null;
+      if (!target) return;
+      e.preventDefault();
+      const offset = 80;
+      const top = target.getBoundingClientRect().top + window.scrollY - offset;
+      window.scrollTo({ top, behavior: 'smooth' });
+    });
+  });
+})();
+
+/* ── IMAGE LAZY LOAD FALLBACK ──────────────────────────── */
+(function initLazyFallback() {
+  if ('loading' in HTMLImageElement.prototype) return;
+  /* Polyfill for browsers that don't support native lazy loading */
+  const imgs = document.querySelectorAll('img[loading="lazy"]');
+  if (!imgs.length || !('IntersectionObserver' in window)) return;
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (!entry.isIntersecting) return;
+      const img = entry.target;
+      if (img.dataset.src) img.src = img.dataset.src;
+      observer.unobserve(img);
+    });
+  }, { rootMargin: '200px' });
+
+  imgs.forEach(img => observer.observe(img));
+})();
+
+/* ── PRODUCT FILTER ────────────────────────────────────── */
+(function initFilter() {
+  const filters = document.querySelectorAll('[data-filter]');
+  const items = document.querySelectorAll('[data-category]');
+
+  if (!filters.length || !items.length) return;
+
+  filters.forEach(btn => {
+    btn.addEventListener('click', () => {
+      filters.forEach(b => b.classList.remove('is-active'));
+      btn.classList.add('is-active');
+
+      const target = btn.dataset.filter;
+
+      items.forEach(item => {
+        const match = target === 'all' || item.dataset.category === target;
+        item.style.display = match ? '' : 'none';
+      });
+    });
+  });
+})();
+
+/* ── LOCATII MAP HIGHLIGHT ─────────────────────────────── */
+(function initMapHighlight() {
+  const pins = document.querySelectorAll('[data-pin]');
+  pins.forEach(pin => {
+    pin.addEventListener('mouseenter', () => {
+      document.querySelectorAll('[data-pin]').forEach(p => p.classList.remove('is-active'));
+      pin.classList.add('is-active');
+    });
+  });
+})();
+
+</script>
+
+<!-- Custom cursor + extra effects -->
+<script>
+(function() {
+  /* Cursor */
+  const cursor = document.getElementById('cursor');
+  const ring = document.getElementById('cursor-ring');
+  if (!cursor || !ring) return;
+
+  let mx = -100, my = -100, rx = -100, ry = -100;
+
+  document.addEventListener('mousemove', e => {
+    mx = e.clientX; my = e.clientY;
+    cursor.style.left = mx + 'px';
+    cursor.style.top  = my + 'px';
+  }, { passive: true });
+
+  function animRing() {
+    rx += (mx - rx) * 0.12;
+    ry += (my - ry) * 0.12;
+    ring.style.left = rx + 'px';
+    ring.style.top  = ry + 'px';
+    requestAnimationFrame(animRing);
+  }
+  animRing();
+
+  /* Nav scroll */
+  const nav = document.getElementById('nav');
+  window.addEventListener('scroll', () => {
+    nav.classList.toggle('is-scrolled', window.scrollY > 40);
+  }, { passive: true });
+})();
+</script>
+
+</body>
+</html>

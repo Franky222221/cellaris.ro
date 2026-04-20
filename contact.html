@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="ro" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact CELLARIS — Cerere Ofertă Izolații Celuloză | București, Prahova</title>
+  <meta name="description" content="Contactează echipa CELLARIS pentru o ofertă gratuită de izolație cu fibre de celuloză. Suntem disponibili în București, Ilfov, Prahova și toată România. Răspuns în 24 de ore.">
+  <link rel="canonical" href="https://cellaris.ro/contact.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/responsive.css">
+  <link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
+  <meta name="theme-color" content="#1B3A2D">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ContactPage",
+    "name": "Contact CELLARIS",
+    "url": "https://cellaris.ro/contact.html",
+    "description": "Pagina de contact CELLARIS pentru cereri de ofertă izolații cu fibre de celuloză.",
+    "mainEntity": {
+      "@type": "LocalBusiness",
+      "name": "CELLARIS",
+      "telephone": "+40-XXX-XXX-XXX",
+      "email": "contact@cellaris.ro",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Ploiești",
+        "addressRegion": "Prahova",
+        "addressCountry": "RO"
+      }
+    }
+  }
+  </script>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav" role="navigation" aria-label="Navigare principală">
+  <div class="container">
+    <div class="nav__inner">
+      <a href="/" class="nav__logo" aria-label="CELLARIS - Acasă">
+        <div class="nav__logo-mark" aria-hidden="true">C</div>
+        <span class="nav__logo-text">CELLARIS</span>
+      </a>
+      <ul class="nav__menu" role="menubar">
+        <li class="nav__item"><a href="/despre-noi.html" class="nav__link">Despre noi</a></li>
+        <li class="nav__item"><a href="/pages/izolatie-cu-celuloza.html" class="nav__link">Produse</a></li>
+        <li class="nav__item"><a href="/servicii.html" class="nav__link">Servicii</a></li>
+        <li class="nav__item"><a href="/proiecte.html" class="nav__link">Proiecte</a></li>
+        <li class="nav__item"><a href="/blog.html" class="nav__link">Blog</a></li>
+        <li class="nav__item"><a href="/contact.html" class="nav__link" aria-current="page">Contact</a></li>
+      </ul>
+      <div class="nav__actions">
+        <a href="/contact.html#oferta" class="btn btn--primary btn--sm">Cerere Ofertă</a>
+        <button class="nav__hamburger" aria-label="Deschide meniu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- MOBILE NAV -->
+<nav class="mobile-nav" aria-label="Meniu mobil">
+  <div class="mobile-nav__header">
+    <div class="nav__logo">
+      <div class="nav__logo-mark" style="background:rgba(107,140,114,0.3);color:#F4EFE4;">C</div>
+      <span style="font-size:1.25rem;font-weight:800;letter-spacing:-0.03em;color:#F4EFE4;">CELLARIS</span>
+    </div>
+    <button class="mobile-nav__close" aria-label="Închide meniu">✕</button>
+  </div>
+  <div class="mobile-nav__links">
+    <a href="/despre-noi.html" class="mobile-nav__link">Despre noi</a>
+    <a href="/pages/izolatie-cu-celuloza.html" class="mobile-nav__link">Produse</a>
+    <a href="/servicii.html" class="mobile-nav__link">Servicii</a>
+    <a href="/proiecte.html" class="mobile-nav__link">Proiecte</a>
+    <a href="/blog.html" class="mobile-nav__link">Blog</a>
+    <a href="/contact.html" class="mobile-nav__link">Contact</a>
+  </div>
+  <div class="mobile-nav__bottom">
+    <a href="/contact.html#oferta" class="btn btn--primary">Cerere Ofertă</a>
+  </div>
+</nav>
+
+<!-- PAGE HERO -->
+<div class="page-hero">
+  <div class="container">
+    <nav aria-label="Breadcrumb" class="breadcrumb">
+      <a href="/">Acasă</a>
+      <span class="breadcrumb__sep" aria-hidden="true">›</span>
+      <span aria-current="page">Contact</span>
+    </nav>
+    <p class="page-hero__eyebrow">Hai să vorbim</p>
+    <h1>Contactează echipa CELLARIS</h1>
+    <p>Suntem disponibili pentru orice întrebare, consultanță gratuită sau cerere de ofertă. Răspundem în cel mult 24 de ore.</p>
+  </div>
+</div>
+
+<!-- CONTACT GRID -->
+<section class="section" aria-labelledby="contact-main">
+  <div class="container">
+    <div class="grid-2" style="gap:4rem;align-items:start;">
+
+      <!-- FORM -->
+      <div id="oferta">
+        <h2 id="contact-main" style="font-size:1.75rem;font-weight:700;color:var(--green-forest);letter-spacing:-0.025em;margin-bottom:0.5rem;">
+          Cerere ofertă gratuită
+        </h2>
+        <p style="color:var(--stone-dark);margin-bottom:2rem;font-size:0.9375rem;">
+          Completează formularul și un specialist CELLARIS te va contacta pentru o consultanță personalizată, fără obligații.
+        </p>
+
+        <form id="contact-form" action="/api/contact" method="POST" novalidate
+              style="display:flex;flex-direction:column;gap:1.25rem;"
+              aria-label="Formular cerere ofertă">
+
+          <!-- Honeypot -->
+          <div class="form-honey" aria-hidden="true">
+            <label>Nu completa acest câmp<input type="text" name="_honey" tabindex="-1" autocomplete="off"></label>
+          </div>
+
+          <div class="grid-2" style="gap:1.25rem;">
+            <div class="form-group">
+              <label class="form-label" for="fname">Prenume *</label>
+              <input class="form-input" type="text" id="fname" name="prenume"
+                     required minlength="2" maxlength="60"
+                     autocomplete="given-name" placeholder="Ion">
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="lname">Nume *</label>
+              <input class="form-input" type="text" id="lname" name="nume"
+                     required minlength="2" maxlength="60"
+                     autocomplete="family-name" placeholder="Popescu">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="email">Adresă email *</label>
+            <input class="form-input" type="email" id="email" name="email"
+                   required maxlength="120"
+                   autocomplete="email" placeholder="ion.popescu@email.ro">
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="phone">Telefon *</label>
+            <input class="form-input" type="tel" id="phone" name="telefon"
+                   required maxlength="20"
+                   autocomplete="tel" placeholder="07XX XXX XXX">
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="location">Județul / Localitate</label>
+            <input class="form-input" type="text" id="location" name="localitate"
+                   maxlength="100" placeholder="ex: București, Sector 3">
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="service">Serviciu de interes</label>
+            <select class="form-select" id="service" name="serviciu">
+              <option value="">— Selectează —</option>
+              <option>Izolație mansardă / pod</option>
+              <option>Izolație acoperiș</option>
+              <option>Izolație pereți</option>
+              <option>Sistem nZEB complet</option>
+              <option>Sistem Casă Pasivă</option>
+              <option>Consultanță tehnică</option>
+              <option>Termoviziune / Blower Door Test</option>
+              <option>Altele</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="area">Suprafață estimată (m²)</label>
+            <input class="form-input" type="number" id="area" name="suprafata"
+                   min="10" max="50000" step="1" placeholder="ex: 150">
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="message">Mesaj / Detalii proiect</label>
+            <textarea class="form-textarea" id="message" name="mesaj"
+                      maxlength="2000" rows="5"
+                      placeholder="Descrie pe scurt proiectul tău: tip construcție, stadiu, orice informație relevantă..."></textarea>
+          </div>
+
+          <div style="font-size:0.8125rem;color:var(--stone);line-height:1.6;">
+            Prin trimiterea formularului ești de acord cu <a href="/politica-confidentialitate.html" style="color:var(--accent);text-decoration:underline;">Politica de Confidențialitate</a>. Nu vom partaja datele tale cu terți.
+          </div>
+
+          <div class="form-status" role="alert" aria-live="polite" style="font-size:0.9375rem;font-weight:500;padding:0.75rem 1rem;border-radius:8px;display:none;" data-state="idle"></div>
+
+          <style>
+            [data-state="ok"] { background: rgba(61,122,80,0.1); color: var(--green-forest); display: block !important; }
+            [data-state="err"] { background: rgba(192,57,43,0.08); color: #c0392b; display: block !important; }
+            [data-state="sending"] { background: rgba(0,0,0,0.04); color: var(--stone-dark); display: block !important; }
+          </style>
+
+          <button type="submit" class="btn btn--primary btn--lg" style="align-self:flex-start;">
+            Trimite cererea
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M3.105 2.289a.75.75 0 00-.826.95l1.414 4.925A1.5 1.5 0 005.135 9.25h6.115a.75.75 0 010 1.5H5.135a1.5 1.5 0 00-1.442 1.086l-1.414 4.926a.75.75 0 00.826.95 28.896 28.896 0 0015.293-7.154.75.75 0 000-1.115A28.897 28.897 0 003.105 2.289z"/></svg>
+          </button>
+        </form>
+      </div>
+
+      <!-- INFO CARD -->
+      <div style="position:sticky;top:100px;">
+        <div style="background:var(--green-forest);color:var(--cream);border-radius:var(--radius-xl);padding:2.5rem;margin-bottom:1.5rem;">
+          <h3 style="font-size:1.25rem;font-weight:700;margin-bottom:1.5rem;letter-spacing:-0.02em;">Date de contact</h3>
+
+          <div style="display:flex;flex-direction:column;gap:1.25rem;">
+            <div style="display:flex;gap:1rem;align-items:flex-start;">
+              <span style="font-size:1.25rem;flex-shrink:0;" aria-hidden="true">📞</span>
+              <div>
+                <div style="font-size:0.75rem;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:rgba(244,239,228,0.5);margin-bottom:0.25rem;">Telefon</div>
+                <a href="tel:+40XXXXXXXXX" style="font-weight:600;color:var(--cream);font-size:1.0625rem;">+40 XXX XXX XXX</a>
+              </div>
+            </div>
+            <div style="display:flex;gap:1rem;align-items:flex-start;">
+              <span style="font-size:1.25rem;flex-shrink:0;" aria-hidden="true">✉️</span>
+              <div>
+                <div style="font-size:0.75rem;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:rgba(244,239,228,0.5);margin-bottom:0.25rem;">Email</div>
+                <a href="mailto:contact@cellaris.ro" style="font-weight:600;color:var(--cream);">contact@cellaris.ro</a>
+              </div>
+            </div>
+            <div style="display:flex;gap:1rem;align-items:flex-start;">
+              <span style="font-size:1.25rem;flex-shrink:0;" aria-hidden="true">📍</span>
+              <div>
+                <div style="font-size:0.75rem;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:rgba(244,239,228,0.5);margin-bottom:0.25rem;">Sediu</div>
+                <span style="font-weight:600;color:var(--cream);">Ploiești, Prahova</span><br>
+                <span style="font-size:0.875rem;color:rgba(244,239,228,0.6);">România</span>
+              </div>
+            </div>
+            <div style="display:flex;gap:1rem;align-items:flex-start;">
+              <span style="font-size:1.25rem;flex-shrink:0;" aria-hidden="true">🕒</span>
+              <div>
+                <div style="font-size:0.75rem;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:rgba(244,239,228,0.5);margin-bottom:0.25rem;">Program</div>
+                <span style="font-weight:600;color:var(--cream);">Lun–Vin: 08:00–17:00</span><br>
+                <span style="font-size:0.875rem;color:rgba(244,239,228,0.6);">Sâmbătă: 09:00–13:00</span>
+              </div>
+            </div>
+          </div>
+
+          <div style="margin-top:2rem;padding-top:1.5rem;border-top:1px solid rgba(244,239,228,0.12);">
+            <a href="https://wa.me/40XXXXXXXXX" class="btn btn--ghost" style="width:100%;justify-content:center;" rel="noopener noreferrer" target="_blank">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#25D366" width="20" height="20" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+              Scrie-ne pe WhatsApp
+            </a>
+          </div>
+        </div>
+
+        <div style="background:var(--cream-light);border:1px solid rgba(0,0,0,0.06);border-radius:var(--radius-xl);padding:2rem;">
+          <h3 style="font-size:1rem;font-weight:700;color:var(--green-forest);margin-bottom:1rem;">Zone de acoperire</h3>
+          <div style="display:flex;flex-wrap:wrap;gap:0.5rem;">
+            <span style="background:var(--accent-light);color:var(--green-forest);padding:0.25em 0.75em;border-radius:999px;font-size:0.8125rem;font-weight:600;">București</span>
+            <span style="background:var(--accent-light);color:var(--green-forest);padding:0.25em 0.75em;border-radius:999px;font-size:0.8125rem;font-weight:600;">Prahova</span>
+            <span style="background:var(--accent-light);color:var(--green-forest);padding:0.25em 0.75em;border-radius:999px;font-size:0.8125rem;font-weight:600;">Ilfov</span>
+            <span style="background:var(--accent-light);color:var(--green-forest);padding:0.25em 0.75em;border-radius:999px;font-size:0.8125rem;font-weight:600;">Ploiești</span>
+            <span style="background:rgba(0,0,0,0.05);color:var(--stone-dark);padding:0.25em 0.75em;border-radius:999px;font-size:0.8125rem;">Brașov</span>
+            <span style="background:rgba(0,0,0,0.05);color:var(--stone-dark);padding:0.25em 0.75em;border-radius:999px;font-size:0.8125rem;">Pitești</span>
+            <span style="background:rgba(0,0,0,0.05);color:var(--stone-dark);padding:0.25em 0.75em;border-radius:999px;font-size:0.8125rem;">Giurgiu</span>
+            <span style="background:rgba(0,0,0,0.05);color:var(--stone-dark);padding:0.25em 0.75em;border-radius:999px;font-size:0.8125rem;">Constanța</span>
+            <span style="background:rgba(0,0,0,0.05);color:var(--stone-dark);padding:0.25em 0.75em;border-radius:999px;font-size:0.8125rem;">Cluj-Napoca</span>
+            <span style="background:rgba(0,0,0,0.05);color:var(--stone-dark);padding:0.25em 0.75em;border-radius:999px;font-size:0.8125rem;">+ toată România</span>
+          </div>
+          <p style="font-size:0.8125rem;color:var(--stone);margin-top:1rem;line-height:1.6;">Prioritate pentru București, Ilfov și Prahova — echipe disponibile permanent. Pentru alte zone, contactați-ne pentru disponibilitate.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- MAP PLACEHOLDER -->
+<div style="background:var(--green-pale);height:360px;display:flex;align-items:center;justify-content:center;margin-top:0;" aria-label="Hartă locație CELLARIS" role="img">
+  <div style="text-align:center;color:var(--green-forest);">
+    <div style="font-size:3rem;margin-bottom:0.5rem;" aria-hidden="true">📍</div>
+    <div style="font-weight:700;font-size:1.125rem;">CELLARIS — Ploiești, Prahova</div>
+    <div style="font-size:0.875rem;color:var(--green-olive);margin-top:0.25rem;">Hartă interactivă — integrare Google Maps</div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="footer" role="contentinfo">
+  <div class="container">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <div class="footer__logo">
+          <div class="footer__logo-mark" aria-hidden="true">C</div>
+          <span class="footer__logo-text">CELLARIS</span>
+        </div>
+        <p class="footer__tagline">Izolații premium din fibre de celuloză reciclată. Producție proprie, montaj profesional, standard nZEB și Casă Pasivă.</p>
+      </div>
+      <div>
+        <h3 class="footer__col-title">Produse</h3>
+        <ul class="footer__links">
+          <li><a href="/pages/izolatie-cu-celuloza.html" class="footer__link">Izolație cu Celuloză</a></li>
+          <li><a href="/pages/fibre-de-lemn.html" class="footer__link">Fibre de Lemn</a></li>
+          <li><a href="/pages/sisteme-nzeb.html" class="footer__link">Sisteme nZEB</a></li>
+          <li><a href="/pages/sisteme-casa-pasiva.html" class="footer__link">Sisteme Casă Pasivă</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="footer__col-title">Servicii</h3>
+        <ul class="footer__links">
+          <li><a href="/servicii.html#montaj" class="footer__link">Montaj Profesional</a></li>
+          <li><a href="/servicii.html#nzeb" class="footer__link">Sisteme nZEB</a></li>
+          <li><a href="/servicii.html#pasiv" class="footer__link">Casă Pasivă</a></li>
+          <li><a href="/servicii.html#consultanta" class="footer__link">Consultanță</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="footer__col-title">Companie</h3>
+        <ul class="footer__links">
+          <li><a href="/despre-noi.html" class="footer__link">Despre CELLARIS</a></li>
+          <li><a href="/proiecte.html" class="footer__link">Proiecte</a></li>
+          <li><a href="/blog.html" class="footer__link">Blog</a></li>
+          <li><a href="/contact.html" class="footer__link">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p>© 2025 CELLARIS SRL. Toate drepturile rezervate.</p>
+      <div class="footer__bottom-links">
+        <a href="/politica-confidentialitate.html">Confidențialitate</a>
+        <a href="/termeni-si-conditii.html">Termeni</a>
+        <a href="/sitemap.xml">Sitemap</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<a href="https://wa.me/40XXXXXXXXX" class="wa-float" aria-label="WhatsApp CELLARIS" rel="noopener noreferrer" target="_blank">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="28" height="28" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+</a>
+
+<script src="/js/security.js" defer></script>
+<script src="/js/app.js" defer></script>
+</body>
+</html>
