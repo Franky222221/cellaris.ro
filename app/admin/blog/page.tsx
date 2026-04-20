@@ -92,6 +92,7 @@ export default async function AdminBlogPage() {
       </div>
 
       {/* Table */}
+      <style>{`.admin-blog-row{transition:background 0.1s}.admin-blog-row:hover{background:#fafafa!important}`}</style>
       <div
         style={{
           background: '#ffffff',
@@ -126,10 +127,7 @@ export default async function AdminBlogPage() {
               </thead>
               <tbody>
                 {sorted.map((post) => (
-                  <tr key={post.id} style={{ transition: 'background 0.1s' }}
-                    onMouseEnter={(e) => ((e.currentTarget as HTMLElement).style.background = '#fafafa')}
-                    onMouseLeave={(e) => ((e.currentTarget as HTMLElement).style.background = 'transparent')}
-                  >
+                  <tr key={post.id} className="admin-blog-row">
                     <td style={tdStyle}>
                       <div style={{ fontWeight: '600', color: '#111827', fontSize: '0.9375rem', marginBottom: '0.125rem' }}>
                         {post.title.length > 60 ? post.title.slice(0, 60) + '...' : post.title}
