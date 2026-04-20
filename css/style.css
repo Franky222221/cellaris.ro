@@ -104,8 +104,8 @@ button, input, select, textarea { font: inherit; }
   align-items: center;
   flex-shrink: 0;
   background: #fff;
-  border-radius: 10px;
-  padding: 5px 12px;
+  border-radius: 8px;
+  padding: 4px 10px;
   transition: opacity .2s, box-shadow .2s;
   text-decoration: none;
 }
@@ -115,7 +115,7 @@ button, input, select, textarea { font: inherit; }
 }
 
 .nav__logo-img {
-  height: 40px;
+  height: 44px;
   width: auto;
   display: block;
 }
