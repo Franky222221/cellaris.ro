@@ -57,7 +57,7 @@ const steps = [
     ),
     badge: '02 — Procesare',
     detailTitle: 'Măcinare & tratare cu săruri de bor',
-    body: 'Hârtia este tăiată și măcinată mecanic, fără adaos de adezivi sau plastic. Se adaugă săruri de bor naturale (acid boric + borax) pentru rezistență la foc (Euroclass E), dăunători și mucegai. Procesul consumă de 8× mai puțină energie față de producția vatei minerale.',
+    body: 'Hârtia este tăiată și măcinată mecanic, fără adaos de adezivi sau plastic. Se adaugă săruri de bor naturale pentru rezistență la foc (Euroclass B s1 d0), dăunători și mucegai. Procesul consumă de 13 ori mai puțină energie față de producția vatei minerale.',
   },
   {
     num: '03',
