@@ -31,9 +31,8 @@ export default function Nav() {
   }, [menuOpen]);
 
   const Logo = () => (
-    <Link href="/" className="nav__logo" aria-label="CELLARIS Acasă">
-      {/* eslint-disable-next-line @next/next/no-img-element */}
-      <img src="/images/logo.png" alt="CELLARIS — Izolații Celuloză" className="nav__logo-img" />
+    <Link href="/" className="nav__logo" aria-label="CELLARIS Acasă" style={{ textDecoration: 'none' }}>
+      <span style={{ fontSize: '1.5rem', fontWeight: 900, color: '#fff', letterSpacing: '-0.04em' }}>CELLARIS</span>
     </Link>
   );
 

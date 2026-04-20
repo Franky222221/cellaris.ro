@@ -7,8 +7,7 @@ export default function Footer() {
         <div className="footer__top">
           <div className="footer__brand-col">
             <div className="footer__logo">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src="/images/logo.png" alt="CELLARIS" style={{ height: 48, width: 'auto' }} />
+              <span style={{ fontSize: '2rem', fontWeight: 900, color: '#fff', letterSpacing: '-0.04em', fontFamily: 'var(--font-sans)' }}>CELLARIS</span>
             </div>
             <p className="footer__tagline">
               Producător și montator de izolații premium din fibre de celuloză reciclată.
