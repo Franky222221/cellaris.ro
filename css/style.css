@@ -104,8 +104,8 @@ button, input, select, textarea { font: inherit; }
   align-items: center;
   flex-shrink: 0;
   background: #fff;
-  border-radius: 8px;
-  padding: 4px 10px;
+  border-radius: 10px;
+  padding: 6px 14px;
   transition: opacity .2s, box-shadow .2s;
   text-decoration: none;
 }
@@ -115,9 +115,11 @@ button, input, select, textarea { font: inherit; }
 }
 
 .nav__logo-img {
-  height: 44px;
+  height: 64px;
   width: auto;
   display: block;
+  max-width: 220px;
+  object-fit: contain;
 }
 
 /* Desktop menu */

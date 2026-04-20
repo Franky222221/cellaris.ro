@@ -33,7 +33,7 @@ export default function Nav() {
   const Logo = () => (
     <Link href="/" className="nav__logo" aria-label="CELLARIS Acasă">
       {/* eslint-disable-next-line @next/next/no-img-element */}
-      <img src="/images/logo.png" alt="CELLARIS — Izolații Celuloză" style={{ height: 40, width: 'auto' }} />
+      <img src="/images/logo.png" alt="CELLARIS — Izolații Celuloză" className="nav__logo-img" />
     </Link>
   );
 
