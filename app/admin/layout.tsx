@@ -59,7 +59,7 @@ function AdminSidebar({
 
   function isActive(item: (typeof NAV_ITEMS)[0]) {
     if (item.exact) return pathname === item.href;
-    return pathname.startsWith(item.href);
+    return pathname?.startsWith(item.href) ?? false;
   }
 
   return (
